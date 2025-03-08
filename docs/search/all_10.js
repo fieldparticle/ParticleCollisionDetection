@@ -20,5 +20,5 @@ var searchData=
   ['logging_20succesfull_20function_20calls_17',['Logging succesfull function calls.',['../page3.html#subsec1',1,'']]],
   ['logname_18',['logName',['../class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#aaafaf68303170d34e7ff24d46765b7e2',1,'FPIBGLog::FPIBGLog']]],
   ['longtype_19',['LONGTYPE',['../namespacelibconf.html#a7172c025cd585be108c445b0a20dea46',1,'libconf']]],
-  ['lvl_20',['lvl',['../class_f_p_i_b_g_config_1_1_f_p_i_b_g_config.html#ab2ed1156313da018d8dd921027cd6e64',1,'FPIBGConfig.FPIBGConfig.lvl'],['../class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#a3f9edc28b28bb85ff09d650b649f0601',1,'FPIBGLog.FPIBGLog.lvl']]]
+  ['lvl_20',['lvl',['../class_f_p_i_b_g_config_1_1_f_p_i_b_g_config.html#ab2ed1156313da018d8dd921027cd6e64',1,'FPIBGConfig::FPIBGConfig']]]
 ];

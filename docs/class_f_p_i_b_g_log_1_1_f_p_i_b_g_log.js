@@ -7,11 +7,8 @@ var class_f_p_i_b_g_log_1_1_f_p_i_b_g_log =
     [ "fileObj", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#ab29c03f5b5cc0bff461ad1a3fa76ae9a", null ],
     [ "log", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#ab0c8b504a3ccdd97fb11b32393f89e65", null ],
     [ "Open", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#a477debda785d2795feb9b726d4d25a1e", null ],
-    [ "SetDebugLevel", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#a0e77bd2dba6fc2a730759cc45a780625", null ],
     [ "appName", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#a7f9fb007106d28b6592b75e81f445b63", null ],
-    [ "dlvl", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#abae161fb087959736b2ed59ffd5ebbcb", null ],
     [ "FileObj", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#aa0d2155490a24e7f10eaa1c45b93194c", null ],
     [ "fileObj", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#a32bda1341ad9a4dc03d0f638db34f21a", null ],
-    [ "logName", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#aaafaf68303170d34e7ff24d46765b7e2", null ],
-    [ "lvl", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#a3f9edc28b28bb85ff09d650b649f0601", null ]
+    [ "logName", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#aaafaf68303170d34e7ff24d46765b7e2", null ]
 ];

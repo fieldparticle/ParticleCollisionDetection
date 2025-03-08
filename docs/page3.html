@@ -124,7 +124,7 @@ Class Methods</h1>
 <div class="line">    self.cfg = self.bobj.cfg.config</div>
 <div class="line">    self.log = self.bobj.log</div>
 <div class="line">    <span class="comment"># Assign this objects debug level. Add incremental numbers to this to identify unique error numbers.</span></div>
-<div class="line">    self.bobj.log.SetDebugLevel(50)</div>
+<div class="line">    self.dlvl = 50</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment"># Assign all configuration items in the create function</span></div>
 <div class="line">    <span class="comment"># and contain them in a try block</span></div>
@@ -140,7 +140,7 @@ Class Methods</h1>
 <div class="line">            __file__,</div>
 <div class="line">            inspect.currentframe().f_code.co_name,</div>
 <div class="line">            self.objname,</div>
-<div class="line">            self.bobj.log.dlvl+1,</div>
+<div class="line">            self.dlvl+1,</div>
 <div class="line">            err)</div>
 <div class="line">        self.isConnected = <span class="keyword">False</span></div>
 <div class="line">        </div>
@@ -182,7 +182,7 @@ Class Methods</h1>
 <div class="line">                            __file__,</div>
 <div class="line">                            inspect.currentframe().f_code.co_name,</div>
 <div class="line">                            self.ObjName,</div>
-<div class="line">                            self.bobj.log.dlvl+1,</div>
+<div class="line">                            self.dlvl+1,</div>
 <div class="line">                            f<span class="stringliteral">&quot;Running Mod:&quot;</span> + modName)</div>
 <div class="ttc" id="anamespace_my_class_html"><div class="ttname"><a href="namespace_my_class.html">MyClass</a></div><div class="ttdef"><b>Definition</b> MyClass.py:1</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="section2"></a>
@@ -245,7 +245,7 @@ Logging failures of function calls.</h2>
 <div class="line">        __file__,                               <span class="comment"># The file from which it is called - automatic. </span></div>
 <div class="line">        inspect.currentframe().f_code.co_name,  <span class="comment"># Object creation name - automatic.</span></div>
 <div class="line">        self.ObjName,                           <span class="comment"># The name assigned to the object - automatic prob. redundant.</span></div>
-<div class="line">        self.bobj.log.dlvl+1,                   <span class="comment"># The error code. Add numbers sequentially to the error level for this class.</span></div>
+<div class="line">        self.dlvl+1,                            <span class="comment"># The error code. Add numbers sequentially to the error level for this class.</span></div>
 <div class="line">        f<span class="stringliteral">&quot;Running Mod:&quot;</span> + modName)              <span class="comment"># A descriptive string. Include all of the information needede to solve the error.</span></div>
 </div><!-- fragment --><h2><a class="anchor" id="subsec3"></a>
 Debug level for classes.</h2>

@@ -7,7 +7,7 @@ var searchData=
   ['disconnect_5fbutton_4',['disconnect_button',['../class_e_l_main_window_1_1_setup_tab.html#a86c51b16f9f853ca79abbcbfc01c28e2',1,'ELMainWindow::SetupTab']]],
   ['disconnect_5ffrom_5fserver_5',['disconnect_from_server',['../class_e_l_main_window_1_1_setup_tab.html#aa04add6db910ee333ba5b2238dc23d67',1,'ELMainWindow::SetupTab']]],
   ['display_5fresponse_6',['display_response',['../class_e_l_main_window_1_1_setup_tab.html#a367a073356a44277cae9816cc4ce69e8',1,'ELMainWindow::SetupTab']]],
-  ['dlvl_7',['dlvl',['../class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#abae161fb087959736b2ed59ffd5ebbcb',1,'FPIBGLog::FPIBGLog']]],
+  ['dlvl_7',['dlvl',['../class_f_p_i_b_gclient_1_1_t_c_p_i_p.html#ab2d81ecdb2a8a5f3cd132f7ee809b827',1,'FPIBGclient.TCPIP.dlvl'],['../class_f_p_i_b_g_data_e_x_p_1_1_data_class.html#a32955ce72e82c92d0e33c406f65fd487',1,'FPIBGDataEXP.DataClass.dlvl'],['../class_my_class_1_1_my_class.html#a8d4a5d6296fc94b3cc8cb729aebe2dad',1,'MyClass.MyClass.dlvl']]],
   ['doauto_5fcheckbox_8',['doauto_checkbox',['../class_tab_form_gen_config_1_1_tab_gen_config.html#a4a2027f9e48dbd99cb293b9f03188282',1,'TabFormGenConfig::TabGenConfig']]],
   ['doautowait_5fcheckbox_9',['doautowait_checkbox',['../class_tab_form_gen_config_1_1_tab_gen_config.html#acb538fbd8e47d1e038215f46175bdc1d',1,'TabFormGenConfig::TabGenConfig']]],
   ['dt_10',['dt',['../class_tab_form_gen_config_1_1_tab_gen_config.html#a99c8a3952f7840a9bd16c1cf4c524e76',1,'TabFormGenConfig::TabGenConfig']]]

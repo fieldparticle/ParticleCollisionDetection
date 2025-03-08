@@ -19,6 +19,7 @@ var class_f_p_i_b_gclient_1_1_t_c_p_i_p =
     [ "cfg", "class_f_p_i_b_gclient_1_1_t_c_p_i_p.html#a8580c48bcfa6c418bdf1473aa5959e56", null ],
     [ "client_socket", "class_f_p_i_b_gclient_1_1_t_c_p_i_p.html#acd219e2bf1bd1e3b2c4dfeab04a8a463", null ],
     [ "command", "class_f_p_i_b_gclient_1_1_t_c_p_i_p.html#a1e6c623d6e0d1659a1d18e9bdd77fd1b", null ],
+    [ "dlvl", "class_f_p_i_b_gclient_1_1_t_c_p_i_p.html#ab2d81ecdb2a8a5f3cd132f7ee809b827", null ],
     [ "isConnected", "class_f_p_i_b_gclient_1_1_t_c_p_i_p.html#a8f448abd57bb412760db27893cf48457", null ],
     [ "log", "class_f_p_i_b_gclient_1_1_t_c_p_i_p.html#a0f3833f878e9c743121498223f6b8b0a", null ],
     [ "objname", "class_f_p_i_b_gclient_1_1_t_c_p_i_p.html#a3e27a39425336f063bf8903b8ff108c2", null ],

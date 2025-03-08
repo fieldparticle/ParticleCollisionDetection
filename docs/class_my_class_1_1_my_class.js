@@ -9,6 +9,7 @@ var class_my_class_1_1_my_class =
     [ "Write", "class_my_class_1_1_my_class.html#aceaa32281b06b3e0a466279f36602429", null ],
     [ "bobj", "class_my_class_1_1_my_class.html#a751ee0e26e6c80a676eadca4dcd164a7", null ],
     [ "cfg", "class_my_class_1_1_my_class.html#a7f64328062cd438438ab6675c5fc3473", null ],
+    [ "dlvl", "class_my_class_1_1_my_class.html#a8d4a5d6296fc94b3cc8cb729aebe2dad", null ],
     [ "log", "class_my_class_1_1_my_class.html#ae197f4d2ffef8ccc8f14824a046da367", null ],
     [ "ObjName", "class_my_class_1_1_my_class.html#ae7f07e8023835ff93013ace49670153a", null ]
 ];

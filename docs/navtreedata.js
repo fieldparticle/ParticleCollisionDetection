@@ -66,7 +66,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_b_r_main_window_8py.html",
-"class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#aaafaf68303170d34e7ff24d46765b7e2",
+"class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#ab0c8b504a3ccdd97fb11b32393f89e65",
 "class_tab_form_set_up_1_1_tab_setup.html",
 "namespace_e_l_test_f_p_i_b_gserver.html#a279ddd57e0662735f4ebd5aabe0bcbfb"
 ];
