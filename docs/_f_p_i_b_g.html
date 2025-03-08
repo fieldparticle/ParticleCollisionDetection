@@ -106,7 +106,9 @@ $(function(){initNavTree('_f_p_i_b_g.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Utility Project Style and Procedure Guide</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="fragment"><div class="line"><span class="keyword">class </span><a class="code hl_namespace" href="namespace_my_class.html">MyClass</a>:</div>
+<div class="textblock"><p>All classes will have the methods even if they are not used. The following is an example class. It contains the constructor in which we save the object name. It has a create function that assigns the base object to the member self.bobj. It assigned the config and log file objects to short names to make the code more compact. It also assignes the error code level to <code>python self.dlvl</code> of this class which insures that we have a unique error id for any errors See Section <a class="el" href="#section3">Logging</a>.</p>
+<p>Also notice that assignment of all configuration items needed for the class are contained in the Create() function and multiple items are arranged into a try block. This is to insure that all configuration items you need exist before the class is used.</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code hl_namespace" href="namespace_my_class.html">MyClass</a>:</div>
 <div class="line"> </div>
 <div class="line">def __init__(self,ObjName):</div>
 <div class="line">    self.ObjName = ObjName</div>
