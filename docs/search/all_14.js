@@ -13,7 +13,7 @@ var searchData=
   ['pptimg2md_2epy_10',['pptimg2md.py',['../pptimg2md_8py.html',1,'']]],
   ['preamble_11',['preamble',['../namespacepreamble.html',1,'']]],
   ['preamble_2epy_12',['preamble.py',['../preamble_8py.html',1,'']]],
-  ['procedure_20guide_13',['FPIBG Utility Project Style and Procedure Guide',['../page3.html',1,'']]],
-  ['project_20style_20and_20procedure_20guide_14',['FPIBG Utility Project Style and Procedure Guide',['../page3.html',1,'']]],
-  ['pytest_15',['Unit Testing with Pytest',['../page3.html#subsec6',1,'']]]
+  ['procedure_20guide_13',['Utility Project Style and Procedure Guide',['../_f_p_i_b_g.html',1,'']]],
+  ['project_20style_20and_20procedure_20guide_14',['Utility Project Style and Procedure Guide',['../_f_p_i_b_g.html',1,'']]],
+  ['pytest_15',['Unit Testing with Pytest',['../_f_p_i_b_g.html#subsec6',1,'']]]
 ];

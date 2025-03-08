@@ -26,17 +26,19 @@ var NAVTREE =
 [
   [ "FPIBG Utility", "index.html", [
     [ "CEN5035 Submission FPIBG Sprint 2, Modules 3,4,5", "index.html", "index" ],
-    [ "FPIBG Utility Project Style and Procedure Guide", "page3.html", [
-      [ "Class Methods", "page3.html#section1", null ],
-      [ "Class Instantiations", "page3.html#section2", null ],
-      [ "Logging", "page3.html#section3", [
-        [ "Logging succesfull function calls.", "page3.html#subsec1", null ],
-        [ "Logging failures of function calls.", "page3.html#subsec2", null ],
-        [ "Debug level for classes.", "page3.html#subsec3", null ]
+    [ "Utility Project Style and Procedure Guide", "_f_p_i_b_g.html", [
+      [ "Class Instantiations", "_f_p_i_b_g.html#section2", null ],
+      [ "Logging", "_f_p_i_b_g.html#section3", [
+        [ "Logging succesfull function calls.", "_f_p_i_b_g.html#subsec1", null ],
+        [ "Logging failures of function calls.", "_f_p_i_b_g.html#subsec2", null ],
+        [ "Debug level for classes.", "_f_p_i_b_g.html#subsec3", null ]
       ] ],
-      [ "Exersizeing and Unit testing", "page3.html#section4", [
-        [ "Exercising", "page3.html#subsec5", null ],
-        [ "Unit Testing with Pytest", "page3.html#subsec6", null ]
+      [ "Exercising and Unit testing", "_f_p_i_b_g.html#section4", [
+        [ "Exercising", "_f_p_i_b_g.html#subsec5", null ],
+        [ "Unit Testing with Pytest", "_f_p_i_b_g.html#subsec6", null ]
+      ] ],
+      [ "Documenting the code", "_f_p_i_b_g.html#section5", [
+        [ "Documenting a class", "_f_p_i_b_g.html#subsec7", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -66,9 +68,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_b_r_main_window_8py.html",
-"class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#ab0c8b504a3ccdd97fb11b32393f89e65",
-"class_tab_form_set_up_1_1_tab_setup.html",
-"namespace_e_l_test_f_p_i_b_gserver.html#a279ddd57e0662735f4ebd5aabe0bcbfb"
+"class_f_p_i_b_g_data_e_x_p_1_1_data_class.html#a5ddde5ea6e10b2fa074dfefb6967b40f",
+"class_tab_form_gen_config_1_1_tab_gen_config.html#aba5d6306bc4e80a92931374e07e26288",
+"functions_i.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

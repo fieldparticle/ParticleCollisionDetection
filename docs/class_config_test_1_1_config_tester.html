@@ -135,7 +135,9 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Class for testing configuration file functionality
-</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</pre> 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00014">14</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a44c283c0279c9d4419cd1396b8ebc4d7" name="a44c283c0279c9d4419cd1396b8ebc4d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44c283c0279c9d4419cd1396b8ebc4d7">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -155,6 +157,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Initialize with object name</pre> 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00019">19</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>    <span class="keyword">def </span>__init__(self, ObjName):</div>
+<div class="line"><span class="lineno">   20</span>        <span class="stringliteral">&quot;&quot;&quot;Initialize with object name&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   21</span>        self.ObjName = ObjName</div>
+<div class="line"><span class="lineno">   22</span>        print(f<span class="stringliteral">&quot;Created {ObjName}&quot;</span>)</div>
+<div class="line"><span class="lineno">   23</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -173,6 +182,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Closes any resources</pre> 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00049">49</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>    <span class="keyword">def </span>Close(self):</div>
+<div class="line"><span class="lineno">   50</span>        <span class="stringliteral">&quot;&quot;&quot;Closes any resources&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span> 0</div>
+<div class="line"><span class="lineno">   52</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2aa206eca66ed9106720c3e9f417c91e" name="a2aa206eca66ed9106720c3e9f417c91e"></a>
@@ -197,6 +212,30 @@ Public Attributes</h2></td></tr>
 Args:
     gobj: The global logging object
 </pre> 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00024">24</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>    <span class="keyword">def </span>Create(self, gobj):</div>
+<div class="line"><span class="lineno">   25</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   26</span><span class="stringliteral">        Creates the ConfigTester object with logging</span></div>
+<div class="line"><span class="lineno">   27</span><span class="stringliteral">        Args:</span></div>
+<div class="line"><span class="lineno">   28</span><span class="stringliteral">            gobj: The global logging object</span></div>
+<div class="line"><span class="lineno">   29</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   30</span>        self.log = gobj</div>
+<div class="line"><span class="lineno">   31</span>        self.log.log(</div>
+<div class="line"><span class="lineno">   32</span>            inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   33</span>            __file__,</div>
+<div class="line"><span class="lineno">   34</span>            inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   35</span>            self.ObjName,</div>
+<div class="line"><span class="lineno">   36</span>            0,</div>
+<div class="line"><span class="lineno">   37</span>            f<span class="stringliteral">&quot;Created {self.ObjName} successfully.&quot;</span></div>
+<div class="line"><span class="lineno">   38</span>        )</div>
+<div class="line"><span class="lineno">   39</span>        </div>
+<div class="line"><span class="lineno">   40</span>        <span class="comment"># Create config object for testing</span></div>
+<div class="line"><span class="lineno">   41</span>        self.config = <a class="code hl_namespace" href="namespace_f_p_i_b_g_config.html">FPIBGConfig</a>(<span class="stringliteral">&quot;TestConfig&quot;</span>)</div>
+<div class="line"><span class="lineno">   42</span>        self.config.Create(self.log, <span class="stringliteral">&quot;Particle.cfg&quot;</span>)</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> 0</div>
+<div class="line"><span class="lineno">   44</span>    </div>
+<div class="ttc" id="anamespace_f_p_i_b_g_config_html"><div class="ttname"><a href="namespace_f_p_i_b_g_config.html">FPIBGConfig</a></div><div class="ttdef"><b>Definition</b> <a href="_f_p_i_b_g_config_8py_source.html#l00001">FPIBGConfig.py:1</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5fcd992396432f7f79cee4f37960d1bf" name="a5fcd992396432f7f79cee4f37960d1bf"></a>
@@ -214,6 +253,12 @@ Args:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Opens any resources</pre> 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00045">45</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>    <span class="keyword">def </span>Open(self):</div>
+<div class="line"><span class="lineno">   46</span>        <span class="stringliteral">&quot;&quot;&quot;Opens any resources&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">return</span> 0</div>
+<div class="line"><span class="lineno">   48</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ade9459665e992c0c0fcea750828897af" name="ade9459665e992c0c0fcea750828897af"></a>
@@ -244,6 +289,128 @@ Args:
     modNumber: Module number to test
     dbglvl: Debug level (0-5, where 5 is most verbose)
 </pre> 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00053">53</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>    <span class="keyword">def </span>testObject(self, modNumber, dbglvl):</div>
+<div class="line"><span class="lineno">   54</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   55</span><span class="stringliteral">        Test function that validates configuration functionality</span></div>
+<div class="line"><span class="lineno">   56</span><span class="stringliteral">        Args:</span></div>
+<div class="line"><span class="lineno">   57</span><span class="stringliteral">            modNumber: Module number to test</span></div>
+<div class="line"><span class="lineno">   58</span><span class="stringliteral">            dbglvl: Debug level (0-5, where 5 is most verbose)</span></div>
+<div class="line"><span class="lineno">   59</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> modNumber == 1 <span class="keywordflow">and</span> dbglvl == 5:</div>
+<div class="line"><span class="lineno">   61</span>            print(f<span class="stringliteral">&quot;Running Mod {modNumber} Test&quot;</span>)</div>
+<div class="line"><span class="lineno">   62</span>            self.log.log(</div>
+<div class="line"><span class="lineno">   63</span>                inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   64</span>                __file__,</div>
+<div class="line"><span class="lineno">   65</span>                inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   66</span>                self.ObjName,</div>
+<div class="line"><span class="lineno">   67</span>                0,</div>
+<div class="line"><span class="lineno">   68</span>                <span class="stringliteral">&quot;Test 1 Success&quot;</span></div>
+<div class="line"><span class="lineno">   69</span>            )</div>
+<div class="line"><span class="lineno">   70</span>            </div>
+<div class="line"><span class="lineno">   71</span>            <span class="comment"># Get configuration</span></div>
+<div class="line"><span class="lineno">   72</span>            config = self.config.GetConfig()</div>
+<div class="line"><span class="lineno">   73</span>            </div>
+<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">try</span>:</div>
+<div class="line"><span class="lineno">   75</span>                <span class="comment"># Print and log each configuration value individually</span></div>
+<div class="line"><span class="lineno">   76</span>                <span class="comment"># Window settings</span></div>
+<div class="line"><span class="lineno">   77</span>                print(f<span class="stringliteral">&quot;Window title: {config.application.window.title}&quot;</span>)</div>
+<div class="line"><span class="lineno">   78</span>                print(f<span class="stringliteral">&quot;Window width: {config.application.window.size.w}&quot;</span>)</div>
+<div class="line"><span class="lineno">   79</span>                print(f<span class="stringliteral">&quot;Window height: {config.application.window.size.h}&quot;</span>)</div>
+<div class="line"><span class="lineno">   80</span>                </div>
+<div class="line"><span class="lineno">   81</span>                <span class="comment"># Basic simulation settings</span></div>
+<div class="line"><span class="lineno">   82</span>                print(f<span class="stringliteral">&quot;Frame delay: {config.application.frame_delay}&quot;</span>)</div>
+<div class="line"><span class="lineno">   83</span>                print(f<span class="stringliteral">&quot;End frame: {config.application.end_frame}&quot;</span>)</div>
+<div class="line"><span class="lineno">   84</span>                print(f<span class="stringliteral">&quot;Time step: {config.application.dt}&quot;</span>)</div>
+<div class="line"><span class="lineno">   85</span>                </div>
+<div class="line"><span class="lineno">   86</span>                <span class="comment"># Capture settings</span></div>
+<div class="line"><span class="lineno">   87</span>                print(f<span class="stringliteral">&quot;Capture name: {config.application.cap_name}&quot;</span>)</div>
+<div class="line"><span class="lineno">   88</span>                print(f<span class="stringliteral">&quot;Capture number: {config.application.cap_num}&quot;</span>)</div>
+<div class="line"><span class="lineno">   89</span>                print(f<span class="stringliteral">&quot;Capture frames: {config.application.cap_frames}&quot;</span>)</div>
+<div class="line"><span class="lineno">   90</span>                print(f<span class="stringliteral">&quot;Frames buffered: {config.application.framesBuffered}&quot;</span>)</div>
+<div class="line"><span class="lineno">   91</span>                </div>
+<div class="line"><span class="lineno">   92</span>                <span class="comment"># Shader settings</span></div>
+<div class="line"><span class="lineno">   93</span>                print(f<span class="stringliteral">&quot;Shader output: {config.application.shader_out}&quot;</span>)</div>
+<div class="line"><span class="lineno">   94</span>                print(f<span class="stringliteral">&quot;Fragment shader: {config.application.frag_kernParticle}&quot;</span>)</div>
+<div class="line"><span class="lineno">   95</span>                print(f<span class="stringliteral">&quot;Fragment shader spv: {config.application.frag_kernParticlespv}&quot;</span>)</div>
+<div class="line"><span class="lineno">   96</span>                print(f<span class="stringliteral">&quot;Vertex shader: {config.application.vert_kernParticle}&quot;</span>)</div>
+<div class="line"><span class="lineno">   97</span>                print(f<span class="stringliteral">&quot;Vertex shader spv: {config.application.vert_kernParticlespv}&quot;</span>)</div>
+<div class="line"><span class="lineno">   98</span>                print(f<span class="stringliteral">&quot;Compute shader: {config.application.comp_kernParticle}&quot;</span>)</div>
+<div class="line"><span class="lineno">   99</span>                print(f<span class="stringliteral">&quot;Compute shader spv: {config.application.comp_kernParticlespv}&quot;</span>)</div>
+<div class="line"><span class="lineno">  100</span>                </div>
+<div class="line"><span class="lineno">  101</span>                <span class="comment"># Test settings</span></div>
+<div class="line"><span class="lineno">  102</span>                print(f<span class="stringliteral">&quot;Auto mode: {config.application.doAuto}&quot;</span>)</div>
+<div class="line"><span class="lineno">  103</span>                print(f<span class="stringliteral">&quot;Auto wait: {config.application.doAutoWait}&quot;</span>)</div>
+<div class="line"><span class="lineno">  104</span>                print(f<span class="stringliteral">&quot;Test file: {config.application.testfile}&quot;</span>)</div>
+<div class="line"><span class="lineno">  105</span>                print(f<span class="stringliteral">&quot;Performance test: {config.application.perfTest}&quot;</span>)</div>
+<div class="line"><span class="lineno">  106</span>                </div>
+<div class="line"><span class="lineno">  107</span>                <span class="comment"># Test directories</span></div>
+<div class="line"><span class="lineno">  108</span>                print(f<span class="stringliteral">&quot;Test dir PQB: {config.application.testdirPQB}&quot;</span>)</div>
+<div class="line"><span class="lineno">  109</span>                print(f<span class="stringliteral">&quot;Test dir CFB: {config.application.testdirCFB}&quot;</span>)</div>
+<div class="line"><span class="lineno">  110</span>                print(f<span class="stringliteral">&quot;Test dir PCD: {config.application.testdirPCD}&quot;</span>)</div>
+<div class="line"><span class="lineno">  111</span>                print(f<span class="stringliteral">&quot;Test dir DUP: {config.application.testdirDUP}&quot;</span>)</div>
+<div class="line"><span class="lineno">  112</span>                </div>
+<div class="line"><span class="lineno">  113</span>                <span class="comment"># Debug settings</span></div>
+<div class="line"><span class="lineno">  114</span>                print(f<span class="stringliteral">&quot;Compile shaders: {config.application.compileShaders}&quot;</span>)</div>
+<div class="line"><span class="lineno">  115</span>                print(f<span class="stringliteral">&quot;Enable validation layers: {config.application.enableValidationLayers}&quot;</span>)</div>
+<div class="line"><span class="lineno">  116</span>                print(f<span class="stringliteral">&quot;Stop on data: {config.application.stopondata}&quot;</span>)</div>
+<div class="line"><span class="lineno">  117</span>                print(f<span class="stringliteral">&quot;Debug level: {config.application.debugLevel}&quot;</span>)</div>
+<div class="line"><span class="lineno">  118</span>                print(f<span class="stringliteral">&quot;Report comp frames less than: {config.application.reportCompFramesLessThan}&quot;</span>)</div>
+<div class="line"><span class="lineno">  119</span>                print(f<span class="stringliteral">&quot;Report graph frames less than: {config.application.reportGraphFramesLessThan}&quot;</span>)</div>
+<div class="line"><span class="lineno">  120</span>                print(f<span class="stringliteral">&quot;Frames in flight: {config.application.framesInFlight}&quot;</span>)</div>
+<div class="line"><span class="lineno">  121</span>                </div>
+<div class="line"><span class="lineno">  122</span>                <span class="comment"># Print extensions</span></div>
+<div class="line"><span class="lineno">  123</span>                print(<span class="stringliteral">&quot;Device extensions:&quot;</span>)</div>
+<div class="line"><span class="lineno">  124</span>                <span class="keywordflow">for</span> ext <span class="keywordflow">in</span> config.application.device_extensions:</div>
+<div class="line"><span class="lineno">  125</span>                    print(f<span class="stringliteral">&quot;  {ext}&quot;</span>)</div>
+<div class="line"><span class="lineno">  126</span>                </div>
+<div class="line"><span class="lineno">  127</span>                print(<span class="stringliteral">&quot;Instance extensions:&quot;</span>)</div>
+<div class="line"><span class="lineno">  128</span>                <span class="keywordflow">for</span> ext <span class="keywordflow">in</span> config.application.instance_extensions:</div>
+<div class="line"><span class="lineno">  129</span>                    print(f<span class="stringliteral">&quot;  {ext}&quot;</span>)</div>
+<div class="line"><span class="lineno">  130</span>                </div>
+<div class="line"><span class="lineno">  131</span>                print(<span class="stringliteral">&quot;Validation layers:&quot;</span>)</div>
+<div class="line"><span class="lineno">  132</span>                <span class="keywordflow">for</span> layer <span class="keywordflow">in</span> config.application.validation_layers:</div>
+<div class="line"><span class="lineno">  133</span>                    print(f<span class="stringliteral">&quot;  {layer}&quot;</span>)</div>
+<div class="line"><span class="lineno">  134</span>                </div>
+<div class="line"><span class="lineno">  135</span>                print(f<span class="stringliteral">&quot;Print extension: {config.application.printExtension}&quot;</span>)</div>
+<div class="line"><span class="lineno">  136</span>                print(f<span class="stringliteral">&quot;Print dev limits: {config.application.printDevLimtits}&quot;</span>)</div>
+<div class="line"><span class="lineno">  137</span>                print(f<span class="stringliteral">&quot;Verbose report: {config.application.verbose_rpt}&quot;</span>)</div>
+<div class="line"><span class="lineno">  138</span>                <span class="keywordflow">return</span> 0</div>
+<div class="line"><span class="lineno">  139</span>            <span class="keywordflow">except</span> Exception <span class="keyword">as</span> e:</div>
+<div class="line"><span class="lineno">  140</span>                self.log.log(</div>
+<div class="line"><span class="lineno">  141</span>                    inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">  142</span>                    __file__,</div>
+<div class="line"><span class="lineno">  143</span>                    inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">  144</span>                    self.ObjName,</div>
+<div class="line"><span class="lineno">  145</span>                    1,</div>
+<div class="line"><span class="lineno">  146</span>                    f<span class="stringliteral">&quot;Test 1 Failed: {str(e)}&quot;</span></div>
+<div class="line"><span class="lineno">  147</span>                )</div>
+<div class="line"><span class="lineno">  148</span>                <span class="keywordflow">return</span> 1</div>
+<div class="line"><span class="lineno">  149</span>                </div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">elif</span> modNumber == 2 <span class="keywordflow">and</span> dbglvl == 5:</div>
+<div class="line"><span class="lineno">  151</span>            print(f<span class="stringliteral">&quot;Running Mod {modNumber} Test&quot;</span>)</div>
+<div class="line"><span class="lineno">  152</span>            self.log.log(</div>
+<div class="line"><span class="lineno">  153</span>                inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">  154</span>                __file__,</div>
+<div class="line"><span class="lineno">  155</span>                inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">  156</span>                self.ObjName,</div>
+<div class="line"><span class="lineno">  157</span>                0,</div>
+<div class="line"><span class="lineno">  158</span>                <span class="stringliteral">&quot;Test 2 Success&quot;</span></div>
+<div class="line"><span class="lineno">  159</span>            )</div>
+<div class="line"><span class="lineno">  160</span>            <span class="keywordflow">return</span> 0</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  162</span>            self.log.log(</div>
+<div class="line"><span class="lineno">  163</span>                inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">  164</span>                __file__,</div>
+<div class="line"><span class="lineno">  165</span>                inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">  166</span>                self.ObjName,</div>
+<div class="line"><span class="lineno">  167</span>                1,</div>
+<div class="line"><span class="lineno">  168</span>                <span class="stringliteral">&quot;Invalid test number&quot;</span></div>
+<div class="line"><span class="lineno">  169</span>            )</div>
+<div class="line"><span class="lineno">  170</span>            <span class="keywordflow">return</span> 1</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -259,6 +426,8 @@ Args:
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00041">41</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+
 </div>
 </div>
 <a id="afb54ff1723cad74b46cbf57b25de647c" name="afb54ff1723cad74b46cbf57b25de647c"></a>
@@ -272,6 +441,8 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00030">30</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
 
 </div>
 </div>
@@ -287,10 +458,12 @@ Args:
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00021">21</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/test/<a class="el" href="_config_test_8py.html">ConfigTest.py</a></li>
+<li>python/test/<a class="el" href="_config_test_8py_source.html">ConfigTest.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

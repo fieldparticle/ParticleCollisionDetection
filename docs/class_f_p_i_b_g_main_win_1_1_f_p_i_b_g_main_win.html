@@ -156,6 +156,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main window object that contains the tabs for the utility. </p>
+
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_main_win_8py_source.html#l00008">8</a> of file <a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6c290d5e296a32d73a02802f658b0412" name="a6c290d5e296a32d73a02802f658b0412"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c290d5e296a32d73a02802f658b0412">&#9670;&#160;</a></span>__init__()</h2>
@@ -186,6 +188,31 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_main_win_8py_source.html#l00009">9</a> of file <a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>    <span class="keyword">def </span>__init__(self, ObjName, *args, **kwargs):</div>
+<div class="line"><span class="lineno">   10</span>        super().__init__(*args, **kwargs)</div>
+<div class="line"><span class="lineno">   11</span>        self.ObjName = ObjName</div>
+<div class="line"><span class="lineno">   12</span>        self.setWindowTitle(<span class="stringliteral">&#39;FPIBG Utility Main Window&#39;</span>)</div>
+<div class="line"><span class="lineno">   13</span>        self.setGeometry(100, 100, 1024, 768)</div>
+<div class="line"><span class="lineno">   14</span>        self.setWindowIcon(QIcon(<span class="stringliteral">&quot;Logo.png&quot;</span>))</div>
+<div class="line"><span class="lineno">   15</span>        </div>
+<div class="line"><span class="lineno">   16</span>        main_layout = QGridLayout(self)</div>
+<div class="line"><span class="lineno">   17</span>        </div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>        <span class="comment">## Create a tab widget</span></div>
+<div class="line"><span class="lineno">   20</span>        tabSetup = TabObj(self)</div>
+<div class="line"><span class="lineno">   21</span>        tabSetup.Create()</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>        main_layout.addWidget(tabSetup, 0, 0, 2, 1)</div>
+<div class="line"><span class="lineno">   24</span>        main_layout.addWidget(tabSetup, 0, 0, 2, 1)</div>
+<div class="line"><span class="lineno">   25</span>        self.quitBtn = QPushButton(<span class="stringliteral">&#39;Quit&#39;</span>)</div>
+<div class="line"><span class="lineno">   26</span>        main_layout.addWidget(self.quitBtn, 2, 0,</div>
+<div class="line"><span class="lineno">   27</span>                              alignment=Qt.AlignmentFlag.AlignRight)</div>
+<div class="line"><span class="lineno">   28</span>        self.quitBtn.clicked.connect(self.on_clicked)</div>
+<div class="line"><span class="lineno">   29</span>        self.setLayout(main_layout)</div>
+<div class="line"><span class="lineno">   30</span>        self.show()</div>
+<div class="line"><span class="lineno">   31</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -208,6 +235,18 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_main_win_8py_source.html#l00035">35</a> of file <a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>    <span class="keyword">def </span>Create(self,FPIBGBase):</div>
+<div class="line"><span class="lineno">   36</span>        self.bs = FPIBGBase</div>
+<div class="line"><span class="lineno">   37</span>        self.bs.log.log(   inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   38</span>                            __file__,</div>
+<div class="line"><span class="lineno">   39</span>                            inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   40</span>                            self.ObjName,</div>
+<div class="line"><span class="lineno">   41</span>                            0,</div>
+<div class="line"><span class="lineno">   42</span>                            <span class="stringliteral">&quot;Test 1 Main Window Success&quot;</span>)</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>   </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af1ecc4e99af91d154a7a6fdef6868016" name="af1ecc4e99af91d154a7a6fdef6868016"></a>
@@ -225,6 +264,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_main_win_8py_source.html#l00032">32</a> of file <a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>    <span class="keyword">def </span>on_clicked(self) :</div>
+<div class="line"><span class="lineno">   33</span>        exit()</div>
+<div class="line"><span class="lineno">   34</span>        </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -240,6 +284,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_main_win_8py_source.html#l00036">36</a> of file <a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a>.</p>
+
 </div>
 </div>
 <a id="ae58b06cd77cfab40ae8035d1b0db3d14" name="ae58b06cd77cfab40ae8035d1b0db3d14"></a>
@@ -253,6 +299,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_main_win_8py_source.html#l00011">11</a> of file <a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a>.</p>
 
 </div>
 </div>
@@ -268,6 +316,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_main_win_8py_source.html#l00028">28</a> of file <a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a>.</p>
+
 </div>
 </div>
 <a id="ad65f049780317baf1a19b080b07b85d9" name="ad65f049780317baf1a19b080b07b85d9"></a>
@@ -282,10 +332,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_main_win_8py_source.html#l00025">25</a> of file <a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="_f_p_i_b_g_main_win_8py.html">FPIBGMainWin.py</a></li>
+<li>python/shared/<a class="el" href="_f_p_i_b_g_main_win_8py_source.html">FPIBGMainWin.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

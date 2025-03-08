@@ -168,6 +168,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Add all tabs. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00012">12</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae49db927d9ffec89c6e3b0aaa9b5f7f4" name="ae49db927d9ffec89c6e3b0aaa9b5f7f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae49db927d9ffec89c6e3b0aaa9b5f7f4">&#9670;&#160;</a></span>__init__()</h2>
@@ -193,6 +195,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00013">13</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>    <span class="keyword">def </span>__init__(self, *args, **kwargs):</div>
+<div class="line"><span class="lineno">   14</span>        super().__init__(*args, **kwargs)</div>
+<div class="line"><span class="lineno">   15</span>    </div>
+<div class="line"><span class="lineno">   16</span>        </div>
+<div class="line"><span class="lineno">   17</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -213,6 +222,34 @@ Public Attributes</h2></td></tr>
 
 <p>Add all tabs to this tab form (parent) </p>
 
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00019">19</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>    <span class="keyword">def </span>Create(self):</div>
+<div class="line"><span class="lineno">   20</span>        <span class="comment">## Create the tabs</span></div>
+<div class="line"><span class="lineno">   21</span>        self.tabFormWelcome = <a class="code hl_namespace" href="namespace_tab_form_welcome.html">TabFormWelcome</a>()</div>
+<div class="line"><span class="lineno">   22</span>        self.tabFormGenConfig = TabGenConfig()</div>
+<div class="line"><span class="lineno">   23</span>        self.tabFormGenVPerf = TabGenVPerf()</div>
+<div class="line"><span class="lineno">   24</span>        self.tabFormReports = TabReports()</div>
+<div class="line"><span class="lineno">   25</span>        self.tabFormRunRpt = TabRunRpt()</div>
+<div class="line"><span class="lineno">   26</span>        self.tabFormRunSim = TabRunSim()</div>
+<div class="line"><span class="lineno">   27</span>        self.tabFormSetup = TabSetup()</div>
+<div class="line"><span class="lineno">   28</span>        </div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>        <span class="comment">## Add the tabs to tabs to this tab container.</span></div>
+<div class="line"><span class="lineno">   31</span>        self.addTab(self.tabFormWelcome, <span class="stringliteral">&#39;Welcome&#39;</span>)</div>
+<div class="line"><span class="lineno">   32</span>        self.addTab(self.tabFormGenConfig, <span class="stringliteral">&#39;General Configuration&#39;</span>)</div>
+<div class="line"><span class="lineno">   33</span>        self.addTab(self.tabFormGenVPerf, <span class="stringliteral">&#39;Verification and Performance Testing&#39;</span>)</div>
+<div class="line"><span class="lineno">   34</span>        self.addTab(self.tabFormReports, <span class="stringliteral">&#39;Reports&#39;</span>)</div>
+<div class="line"><span class="lineno">   35</span>        self.addTab(self.tabFormRunRpt, <span class="stringliteral">&#39;Run&#39;</span>)</div>
+<div class="line"><span class="lineno">   36</span>        self.addTab(self.tabFormRunSim, <span class="stringliteral">&#39;Run Simulation Movie&#39;</span>)</div>
+<div class="line"><span class="lineno">   37</span>        self.addTab(self.tabFormSetup, <span class="stringliteral">&#39;Setup&#39;</span>)</div>
+<div class="line"><span class="lineno">   38</span>        </div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>        <span class="comment">## Call set form to </span></div>
+<div class="line"><span class="lineno">   41</span>        self.tabFormWelcome.Create()</div>
+<div class="line"><span class="lineno">   42</span>        self.tabFormSetup.Create()</div>
+<div class="line"><span class="lineno">   43</span>        self.tabFormGenConfig.Create()</div>
+<div class="ttc" id="anamespace_tab_form_welcome_html"><div class="ttname"><a href="namespace_tab_form_welcome.html">TabFormWelcome</a></div><div class="ttdef"><b>Definition</b> <a href="_tab_form_welcome_8py_source.html#l00001">TabFormWelcome.py:1</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -230,6 +267,8 @@ Public Attributes</h2></td></tr>
 
 <p>Add the tabs to tabs to this tab container. </p>
 
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00022">22</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
+
 </div>
 </div>
 <a id="a48c64e1d65b40e9a4594c89f71a0f01d" name="a48c64e1d65b40e9a4594c89f71a0f01d"></a>
@@ -245,6 +284,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add the tabs to tabs to this tab container. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00023">23</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
 
 </div>
 </div>
@@ -262,6 +303,8 @@ Public Attributes</h2></td></tr>
 
 <p>Add the tabs to tabs to this tab container. </p>
 
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00024">24</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
+
 </div>
 </div>
 <a id="aadbc5fff6cbb935edaeecc73f427e67b" name="aadbc5fff6cbb935edaeecc73f427e67b"></a>
@@ -277,6 +320,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add the tabs to tabs to this tab container. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00025">25</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
 
 </div>
 </div>
@@ -294,6 +339,8 @@ Public Attributes</h2></td></tr>
 
 <p>Add the tabs to tabs to this tab container. </p>
 
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00026">26</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
+
 </div>
 </div>
 <a id="a086fa75cfa92a7d4249a465a1fb882c9" name="a086fa75cfa92a7d4249a465a1fb882c9"></a>
@@ -309,6 +356,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add the tabs to tabs to this tab container. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00027">27</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
 
 </div>
 </div>
@@ -327,10 +376,12 @@ Public Attributes</h2></td></tr>
 <p>Create the tabs. </p>
 <p>Add the tabs to tabs to this tab container. </p>
 
+<p class="definition">Definition at line <a class="el" href="_tab_class_8py_source.html#l00021">21</a> of file <a class="el" href="_tab_class_8py_source.html">TabClass.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="_tab_class_8py.html">TabClass.py</a></li>
+<li>python/shared/<a class="el" href="_tab_class_8py_source.html">TabClass.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

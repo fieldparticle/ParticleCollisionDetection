@@ -147,7 +147,10 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:aaa1bb072ae9f580ff24aa14c5584a934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up a layout object.  <br /></td></tr>
 <tr class="separator:aaa1bb072ae9f580ff24aa14c5584a934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_tab_form_set_up_8py_source.html#l00005">5</a> of file <a class="el" href="_tab_form_set_up_8py_source.html">TabFormSetUp.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5f8f57c63a51d3588467fa0d1ec27768" name="a5f8f57c63a51d3588467fa0d1ec27768"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f8f57c63a51d3588467fa0d1ec27768">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -172,6 +175,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_tab_form_set_up_8py_source.html#l00006">6</a> of file <a class="el" href="_tab_form_set_up_8py_source.html">TabFormSetUp.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    6</span>    <span class="keyword">def </span>__init__(self, *args, **kwargs):</div>
+<div class="line"><span class="lineno">    7</span>        super().__init__(*args, **kwargs)</div>
+<div class="line"><span class="lineno">    8</span>    </div>
+<div class="line"><span class="lineno">    9</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -190,6 +199,22 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_tab_form_set_up_8py_source.html#l00010">10</a> of file <a class="el" href="_tab_form_set_up_8py_source.html">TabFormSetUp.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>    <span class="keyword">def </span>Create(self):</div>
+<div class="line"><span class="lineno">   11</span> </div>
+<div class="line"><span class="lineno">   12</span>        <span class="comment">## Create a container for all objects</span></div>
+<div class="line"><span class="lineno">   13</span>        self.setupcontainer = QWidget(self)</div>
+<div class="line"><span class="lineno">   14</span>        <span class="comment">## Set up a layout object</span></div>
+<div class="line"><span class="lineno">   15</span>        self.CommPanel = QGridLayout()</div>
+<div class="line"><span class="lineno">   16</span>        <span class="comment">## Add the layout to the container</span></div>
+<div class="line"><span class="lineno">   17</span>        self.setupcontainer.setLayout(self.CommPanel)</div>
+<div class="line"><span class="lineno">   18</span>        <span class="comment">## Add items to the layout</span></div>
+<div class="line"><span class="lineno">   19</span>        self.CommPanel.addWidget(QLabel(<span class="stringliteral">&#39;Username:&#39;</span>), 0, 0)</div>
+<div class="line"><span class="lineno">   20</span>        self.CommPanel.addWidget(QLineEdit(), 0, 1)</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>        <span class="comment">#self.show()</span></div>
+<div class="line"><span class="lineno">   23</span>      </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -208,6 +233,8 @@ Public Attributes</h2></td></tr>
 <p>Set up a layout object. </p>
 <p>Add the layout to the container. </p>
 
+<p class="definition">Definition at line <a class="el" href="_tab_form_set_up_8py_source.html#l00015">15</a> of file <a class="el" href="_tab_form_set_up_8py_source.html">TabFormSetUp.py</a>.</p>
+
 </div>
 </div>
 <a id="a071753e39c5b7eb34e4f31dd907b404e" name="a071753e39c5b7eb34e4f31dd907b404e"></a>
@@ -224,10 +251,12 @@ Public Attributes</h2></td></tr>
 
 <p>Create a container for all objects. </p>
 
+<p class="definition">Definition at line <a class="el" href="_tab_form_set_up_8py_source.html#l00013">13</a> of file <a class="el" href="_tab_form_set_up_8py_source.html">TabFormSetUp.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="_tab_form_set_up_8py.html">TabFormSetUp.py</a></li>
+<li>python/shared/<a class="el" href="_tab_form_set_up_8py_source.html">TabFormSetUp.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

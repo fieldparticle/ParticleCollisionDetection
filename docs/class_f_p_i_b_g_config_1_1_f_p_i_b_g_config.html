@@ -147,7 +147,10 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ab2ed1156313da018d8dd921027cd6e64" id="r_ab2ed1156313da018d8dd921027cd6e64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2ed1156313da018d8dd921027cd6e64">lvl</a> = 100</td></tr>
 <tr class="separator:ab2ed1156313da018d8dd921027cd6e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00007">7</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adb3484fcd602a25cdf7a8ee763fbced5" name="adb3484fcd602a25cdf7a8ee763fbced5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb3484fcd602a25cdf7a8ee763fbced5">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -170,6 +173,16 @@ Static Public Attributes</h2></td></tr>
 Saves the path of the config as a variable.
 Saves the configuration information as a dictionary.
 </pre> 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00031">31</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>    <span class="keyword">def </span>__init__(self,ObjName):</div>
+<div class="line"><span class="lineno">   32</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   33</span><span class="stringliteral">        Constructor for the FPIBGConfig object.</span></div>
+<div class="line"><span class="lineno">   34</span><span class="stringliteral">        Saves the path of the config as a variable.</span></div>
+<div class="line"><span class="lineno">   35</span><span class="stringliteral">        Saves the configuration information as a dictionary.</span></div>
+<div class="line"><span class="lineno">   36</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   37</span>        self.ObjName = ObjName</div>
+<div class="line"><span class="lineno">   38</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -188,6 +201,11 @@ Saves the configuration information as a dictionary.
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00041">41</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>    <span class="keyword">def </span>Close():</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">pass</span>    </div>
+<div class="line"><span class="lineno">   43</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a96bae2e9cde463ab296d110442f6e76e" name="a96bae2e9cde463ab296d110442f6e76e"></a>
@@ -214,6 +232,22 @@ Saves the configuration information as a dictionary.
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00009">9</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>    <span class="keyword">def </span>Create(self,LogObj,CfgFileName):</div>
+<div class="line"><span class="lineno">   10</span>        self.CfgFileName = CfgFileName</div>
+<div class="line"><span class="lineno">   11</span>        self.configPath = os.path.join(self.get_repo_root(), self.CfgFileName)</div>
+<div class="line"><span class="lineno">   12</span>        <span class="keyword">with</span> io.open(self.configPath) <span class="keyword">as</span> f:</div>
+<div class="line"><span class="lineno">   13</span>            self.config = <a class="code hl_function" href="namespacelibconf.html#a3f2a2dba6a12a3f10a0bfee8884861e6">libconf.load</a>(f)</div>
+<div class="line"><span class="lineno">   14</span>            self.log = LogObj</div>
+<div class="line"><span class="lineno">   15</span>            self.log.log( 1,  inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   16</span>                            __file__,</div>
+<div class="line"><span class="lineno">   17</span>                            inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   18</span>                            self.ObjName,</div>
+<div class="line"><span class="lineno">   19</span>                            0,</div>
+<div class="line"><span class="lineno">   20</span>                            <span class="stringliteral">&quot;Successfully Loaded Config File.&quot;</span>)       </div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="ttc" id="anamespacelibconf_html_a3f2a2dba6a12a3f10a0bfee8884861e6"><div class="ttname"><a href="namespacelibconf.html#a3f2a2dba6a12a3f10a0bfee8884861e6">libconf.load</a></div><div class="ttdeci">load(f, filename=None, includedir=&#39;&#39;)</div><div class="ttdef"><b>Definition</b> <a href="libconf_8py_source.html#l00470">libconf.py:470</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae1251184d75f71e1d66b52d9036ebc64" name="ae1251184d75f71e1d66b52d9036ebc64"></a>
@@ -231,6 +265,17 @@ Saves the configuration information as a dictionary.
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Gets the absolute path of the project root directory.</pre> 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00022">22</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>    <span class="keyword">def </span>get_repo_root(self):</div>
+<div class="line"><span class="lineno">   23</span>        <span class="stringliteral">&quot;&quot;&quot;Gets the absolute path of the project root directory.&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   24</span>        current_dir = os.path.dirname(os.path.abspath(__file__))</div>
+<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">while</span> <span class="keywordflow">not</span> os.path.exists(os.path.join(current_dir, <span class="stringliteral">&quot;.git&quot;</span>)):</div>
+<div class="line"><span class="lineno">   26</span>            current_dir = os.path.dirname(current_dir)</div>
+<div class="line"><span class="lineno">   27</span>            <span class="keywordflow">if</span> current_dir == <span class="stringliteral">&quot;/&quot;</span>:</div>
+<div class="line"><span class="lineno">   28</span>                <span class="keywordflow">raise</span> FileNotFoundError(<span class="stringliteral">&quot;Could not find .git directory&quot;</span>)</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">return</span> current_dir</div>
+<div class="line"><span class="lineno">   30</span>     </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2443e833ad4957546ff5610ad8b11340" name="a2443e833ad4957546ff5610ad8b11340"></a>
@@ -250,6 +295,17 @@ Saves the configuration information as a dictionary.
 <pre class="fragment">Function to retreive the config object.
 This object contains all of the data from the configuration file as a dictionary.
 </pre> 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00098">98</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>    <span class="keyword">def </span>GetConfig(self):</div>
+<div class="line"><span class="lineno">   99</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  100</span><span class="stringliteral">        Function to retreive the config object.</span></div>
+<div class="line"><span class="lineno">  101</span><span class="stringliteral">        This object contains all of the data from the configuration file as a dictionary.</span></div>
+<div class="line"><span class="lineno">  102</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> self.config</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aac6c20b8af9f466f0350d90765d90a48" name="aac6c20b8af9f466f0350d90765d90a48"></a>
@@ -267,6 +323,10 @@ This object contains all of the data from the configuration file as a dictionary
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00039">39</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>    <span class="keyword">def </span>Open():</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">pass</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8eb8700b30a58750ae06a6f0484241e6" name="a8eb8700b30a58750ae06a6f0484241e6"></a>
@@ -288,6 +348,62 @@ This object contains all of the data from the configuration file as a dictionary
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00044">44</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>    <span class="keyword">def </span>testObject(self,modName):</div>
+<div class="line"><span class="lineno">   45</span>            print(f<span class="stringliteral">&quot;Running Mod&quot;</span> , modName , <span class="stringliteral">&quot; Test&quot;</span>)</div>
+<div class="line"><span class="lineno">   46</span>            self.log.log( 1, inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   47</span>                            __file__,</div>
+<div class="line"><span class="lineno">   48</span>                            inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   49</span>                            self.ObjName,</div>
+<div class="line"><span class="lineno">   50</span>                            0,</div>
+<div class="line"><span class="lineno">   51</span>                            f<span class="stringliteral">&quot;Running:&quot;</span> + modName)</div>
+<div class="line"><span class="lineno">   52</span>            <span class="comment"># Please here print out every item indicidually</span></div>
+<div class="line"><span class="lineno">   53</span>            print(self.config.application.window.title)</div>
+<div class="line"><span class="lineno">   54</span>            print(self.config.application.window.size.w)</div>
+<div class="line"><span class="lineno">   55</span>            print(self.config.application.window.size.h)</div>
+<div class="line"><span class="lineno">   56</span>            print(self.config.application.frame_delay)</div>
+<div class="line"><span class="lineno">   57</span>            print(self.config.application.end_frame)</div>
+<div class="line"><span class="lineno">   58</span>            print(self.config.application.dt)</div>
+<div class="line"><span class="lineno">   59</span>            print(self.config.application.cap_name)</div>
+<div class="line"><span class="lineno">   60</span>            print(self.config.application.cap_num)</div>
+<div class="line"><span class="lineno">   61</span>            print(self.config.application.cap_frames)</div>
+<div class="line"><span class="lineno">   62</span>            print(self.config.application.framesBuffered)</div>
+<div class="line"><span class="lineno">   63</span>            print(self.config.application.shader_out)</div>
+<div class="line"><span class="lineno">   64</span>            print(self.config.application.frag_kernParticle)</div>
+<div class="line"><span class="lineno">   65</span>            print(self.config.application.frag_kernParticlespv)</div>
+<div class="line"><span class="lineno">   66</span>            print(self.config.application.vert_kernParticle)</div>
+<div class="line"><span class="lineno">   67</span>            print(self.config.application.vert_kernParticlespv)</div>
+<div class="line"><span class="lineno">   68</span>            print(self.config.application.comp_kernParticle)</div>
+<div class="line"><span class="lineno">   69</span>            print(self.config.application.comp_kernParticlespv)</div>
+<div class="line"><span class="lineno">   70</span>            print(self.config.application.doAuto)</div>
+<div class="line"><span class="lineno">   71</span>            print(self.config.application.doAutoWait)</div>
+<div class="line"><span class="lineno">   72</span>            print(self.config.application.testfile)</div>
+<div class="line"><span class="lineno">   73</span>            print(self.config.application.perfTest)</div>
+<div class="line"><span class="lineno">   74</span>            print(self.config.application.testdirPQB)</div>
+<div class="line"><span class="lineno">   75</span>            print(self.config.application.testdirCFB)</div>
+<div class="line"><span class="lineno">   76</span>            print(self.config.application.testdirPCD)</div>
+<div class="line"><span class="lineno">   77</span>            print(self.config.application.testdirDUP)</div>
+<div class="line"><span class="lineno">   78</span>            print(self.config.application.compileShaders)</div>
+<div class="line"><span class="lineno">   79</span>            print(self.config.application.enableValidationLayers)</div>
+<div class="line"><span class="lineno">   80</span>            print(self.config.application.stopondata)</div>
+<div class="line"><span class="lineno">   81</span>            print(self.config.application.debugLevel)</div>
+<div class="line"><span class="lineno">   82</span>            print(self.config.application.reportCompFramesLessThan)</div>
+<div class="line"><span class="lineno">   83</span>            print(self.config.application.reportGraphFramesLessThan)</div>
+<div class="line"><span class="lineno">   84</span>            print(self.config.application.framesInFlight)</div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordflow">for</span> x <span class="keywordflow">in</span> self.config.application.device_extensions:</div>
+<div class="line"><span class="lineno">   86</span>                print(x)</div>
+<div class="line"><span class="lineno">   87</span>            <span class="keywordflow">for</span> x <span class="keywordflow">in</span> self.config.application.instance_extensions:</div>
+<div class="line"><span class="lineno">   88</span>                print(x)</div>
+<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">for</span> x <span class="keywordflow">in</span> self.config.application.validation_layers:</div>
+<div class="line"><span class="lineno">   90</span>                print(x)</div>
+<div class="line"><span class="lineno">   91</span>            print(self.config.application.printExtension)</div>
+<div class="line"><span class="lineno">   92</span>            print(self.config.application.printDevLimtits)</div>
+<div class="line"><span class="lineno">   93</span>            print(self.config.application.verbose_rpt)</div>
+<div class="line"><span class="lineno">   94</span>            <span class="keywordflow">return</span> 0</div>
+<div class="line"><span class="lineno">   95</span>            </div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>   </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -303,6 +419,8 @@ This object contains all of the data from the configuration file as a dictionary
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00010">10</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+
 </div>
 </div>
 <a id="a0984cd7083f46d5eebe8ba91e1c48ca5" name="a0984cd7083f46d5eebe8ba91e1c48ca5"></a>
@@ -316,6 +434,8 @@ This object contains all of the data from the configuration file as a dictionary
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00013">13</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
 
 </div>
 </div>
@@ -331,6 +451,8 @@ This object contains all of the data from the configuration file as a dictionary
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00011">11</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+
 </div>
 </div>
 <a id="aef290f8df168a9f2ad7966e0653d9ddf" name="aef290f8df168a9f2ad7966e0653d9ddf"></a>
@@ -344,6 +466,8 @@ This object contains all of the data from the configuration file as a dictionary
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00014">14</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
 
 </div>
 </div>
@@ -367,6 +491,8 @@ This object contains all of the data from the configuration file as a dictionary
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00008">8</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+
 </div>
 </div>
 <a id="a022b17ca2a44f218817df71c6f749faf" name="a022b17ca2a44f218817df71c6f749faf"></a>
@@ -381,10 +507,12 @@ This object contains all of the data from the configuration file as a dictionary
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_config_8py_source.html#l00018">18</a> of file <a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="_f_p_i_b_g_config_8py.html">FPIBGConfig.py</a></li>
+<li>python/shared/<a class="el" href="_f_p_i_b_g_config_8py_source.html">FPIBGConfig.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

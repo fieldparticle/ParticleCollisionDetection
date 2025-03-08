@@ -144,6 +144,36 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00173">173</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  173</span><span class="keyword">def </span>main():</div>
+<div class="line"><span class="lineno">  174</span>    <span class="comment"># Create base object as required</span></div>
+<div class="line"><span class="lineno">  175</span>    gobj = <a class="code hl_namespace" href="namespace_f_p_i_b_g_base.html">FPIBGBase</a>(<span class="stringliteral">&quot;GlobalBaseClass&quot;</span>)</div>
+<div class="line"><span class="lineno">  176</span>    gobj.Create(<span class="stringliteral">&quot;Particle.cfg&quot;</span>, <span class="stringliteral">&quot;FPIBG.log&quot;</span>)</div>
+<div class="line"><span class="lineno">  177</span>    </div>
+<div class="line"><span class="lineno">  178</span>    <span class="comment"># Create and test config</span></div>
+<div class="line"><span class="lineno">  179</span>    tester = ConfigTester(<span class="stringliteral">&quot;ConfigTester&quot;</span>)</div>
+<div class="line"><span class="lineno">  180</span>    tester.Create(gobj.log)  <span class="comment"># Pass just the log object, not the whole base object</span></div>
+<div class="line"><span class="lineno">  181</span>    tester.Open()</div>
+<div class="line"><span class="lineno">  182</span>    </div>
+<div class="line"><span class="lineno">  183</span>    <span class="comment"># Run tests with debug level 5</span></div>
+<div class="line"><span class="lineno">  184</span>    print(<span class="stringliteral">&quot;\n=== Running Config Test 1 ===&quot;</span>)</div>
+<div class="line"><span class="lineno">  185</span>    result1 = tester.testObject(1, 5)</div>
+<div class="line"><span class="lineno">  186</span>    print(f<span class="stringliteral">&quot;Test 1 Result: {&#39;Success&#39; if result1 == 0 else &#39;Failed&#39;}&quot;</span>)</div>
+<div class="line"><span class="lineno">  187</span>    </div>
+<div class="line"><span class="lineno">  188</span>    print(<span class="stringliteral">&quot;\n=== Running Config Test 2 ===&quot;</span>)</div>
+<div class="line"><span class="lineno">  189</span>    result2 = tester.testObject(2, 5)</div>
+<div class="line"><span class="lineno">  190</span>    print(f<span class="stringliteral">&quot;Test 2 Result: {&#39;Success&#39; if result2 == 0 else &#39;Failed&#39;}&quot;</span>)</div>
+<div class="line"><span class="lineno">  191</span>    </div>
+<div class="line"><span class="lineno">  192</span>    <span class="comment"># Cleanup</span></div>
+<div class="line"><span class="lineno">  193</span>    tester.Close()</div>
+<div class="line"><span class="lineno">  194</span>    gobj.Close()</div>
+<div class="line"><span class="lineno">  195</span>    </div>
+<div class="line"><span class="lineno">  196</span>    print(<span class="stringliteral">&quot;\n=== Testing Complete ===&quot;</span>)</div>
+<div class="line"><span class="lineno">  197</span>    overall = <span class="stringliteral">&quot;Success&quot;</span> <span class="keywordflow">if</span> result1 == 0 <span class="keywordflow">and</span> result2 == 0 <span class="keywordflow">else</span> <span class="stringliteral">&quot;Failed&quot;</span></div>
+<div class="line"><span class="lineno">  198</span>    print(f<span class="stringliteral">&quot;Overall Test Result: {overall}&quot;</span>)</div>
+<div class="line"><span class="lineno">  199</span> </div>
+<div class="ttc" id="anamespace_f_p_i_b_g_base_html"><div class="ttname"><a href="namespace_f_p_i_b_g_base.html">FPIBGBase</a></div><div class="ttdef"><b>Definition</b> <a href="_f_p_i_b_g_base_8py_source.html#l00001">FPIBGBase.py:1</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -159,6 +189,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00006">6</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
+
 </div>
 </div>
 <a id="a6f4caa7a83369a8199b29009ffe70660" name="a6f4caa7a83369a8199b29009ffe70660"></a>
@@ -172,6 +204,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_config_test_8py_source.html#l00007">7</a> of file <a class="el" href="_config_test_8py_source.html">ConfigTest.py</a>.</p>
 
 </div>
 </div>

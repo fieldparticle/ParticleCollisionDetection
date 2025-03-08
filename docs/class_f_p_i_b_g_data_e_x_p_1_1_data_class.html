@@ -147,7 +147,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af0f8af2f7711092b59657486ef548cd6" id="r_af0f8af2f7711092b59657486ef548cd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0f8af2f7711092b59657486ef548cd6">topdir</a> = self.cfg.application.testdirPQB</td></tr>
 <tr class="separator:af0f8af2f7711092b59657486ef548cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00005">5</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab723359cdc0770df4e98e0b99558a66a" name="ab723359cdc0770df4e98e0b99558a66a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab723359cdc0770df4e98e0b99558a66a">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -172,6 +175,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00007">7</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>    <span class="keyword">def </span>__init__(self, drflag, ObjName):</div>
+<div class="line"><span class="lineno">    8</span>        self.m_drflag = drflag</div>
+<div class="line"><span class="lineno">    9</span>        self.data_files = []</div>
+<div class="line"><span class="lineno">   10</span>        self.average_list = []</div>
+<div class="line"><span class="lineno">   11</span>        self.ObjName = ObjName</div>
+<div class="line"><span class="lineno">   12</span>       </div>
+<div class="line"><span class="lineno">   13</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -190,6 +202,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00052">52</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>    <span class="keyword">def </span>Close(self):</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">pass</span></div>
+<div class="line"><span class="lineno">   54</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a193d35d08b633c8c402b9213ee37db44" name="a193d35d08b633c8c402b9213ee37db44"></a>
@@ -216,6 +233,26 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00014">14</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>    <span class="keyword">def </span>Create(self, BaseObj, file_end):</div>
+<div class="line"><span class="lineno">   15</span>        self.bobj = BaseObj</div>
+<div class="line"><span class="lineno">   16</span>        self.cfg = self.bobj.cfg.config</div>
+<div class="line"><span class="lineno">   17</span>        self.log = self.bobj.log</div>
+<div class="line"><span class="lineno">   18</span>        self.dlvl= 1000</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>        </div>
+<div class="line"><span class="lineno">   21</span>        match(file_end):</div>
+<div class="line"><span class="lineno">   22</span>            case <span class="stringliteral">&quot;PQB&quot;</span>:</div>
+<div class="line"><span class="lineno">   23</span>                self.topdir = self.cfg.application.testdirPQB</div>
+<div class="line"><span class="lineno">   24</span>            case <span class="stringliteral">&quot;PCD&quot;</span>:</div>
+<div class="line"><span class="lineno">   25</span>                self.topdir = self.cfg.application.testdirPCD</div>
+<div class="line"><span class="lineno">   26</span>            case <span class="stringliteral">&quot;DUP&quot;</span>:</div>
+<div class="line"><span class="lineno">   27</span>                self.topdir = self.cfg.application.testdirDUP</div>
+<div class="line"><span class="lineno">   28</span>            case <span class="stringliteral">&quot;CFB&quot;</span>:</div>
+<div class="line"><span class="lineno">   29</span>                self.topdir = self.cfg.application.testdirCFB</div>
+<div class="line"><span class="lineno">   30</span>                </div>
+<div class="line"><span class="lineno">   31</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5ddde5ea6e10b2fa074dfefb6967b40f" name="a5ddde5ea6e10b2fa074dfefb6967b40f"></a>
@@ -233,6 +270,28 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00032">32</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>    <span class="keyword">def </span>Open(self) -&gt; bool:</div>
+<div class="line"><span class="lineno">   33</span>            if(os.path.exists(self.topdir) == <span class="keyword">False</span>):</div>
+<div class="line"><span class="lineno">   34</span>                rettxt = <span class="stringliteral">&quot;Data directory :&quot;</span> + self.topdir + <span class="stringliteral">&quot; not found.&quot;</span></div>
+<div class="line"><span class="lineno">   35</span>                self.bobj.log.log( 1, inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   36</span>                            __file__,</div>
+<div class="line"><span class="lineno">   37</span>                            inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   38</span>                            self.ObjName,</div>
+<div class="line"><span class="lineno">   39</span>                            self.dlvl+1,</div>
+<div class="line"><span class="lineno">   40</span>                            rettxt)</div>
+<div class="line"><span class="lineno">   41</span>                <span class="keywordflow">return</span> <span class="keyword">False</span>    </div>
+<div class="line"><span class="lineno">   42</span>            </div>
+<div class="line"><span class="lineno">   43</span>            rettxt = <span class="stringliteral">&quot;Sucessfully found data directory :&quot;</span> + self.topdir</div>
+<div class="line"><span class="lineno">   44</span>            self.bobj.log.log( 1, inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   45</span>                                __file__,</div>
+<div class="line"><span class="lineno">   46</span>                                inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   47</span>                                self.ObjName,</div>
+<div class="line"><span class="lineno">   48</span>                                0,</div>
+<div class="line"><span class="lineno">   49</span>                                rettxt)           </div>
+<div class="line"><span class="lineno">   50</span>            <span class="keywordflow">return</span> <span class="keyword">True</span></div>
+<div class="line"><span class="lineno">   51</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a99f18c7cbec946e6f134274eb096084b" name="a99f18c7cbec946e6f134274eb096084b"></a>
@@ -250,6 +309,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00055">55</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>    <span class="keyword">def </span>Read(self):</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">pass</span></div>
+<div class="line"><span class="lineno">   57</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abfb1f9bf59fbe6af4a07620405fa46a1" name="abfb1f9bf59fbe6af4a07620405fa46a1"></a>
@@ -267,6 +331,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00058">58</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>    <span class="keyword">def </span>Write(self):</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">pass</span></div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -282,6 +352,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00010">10</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+
 </div>
 </div>
 <a id="a4c6602f714d256552d647955843d5551" name="a4c6602f714d256552d647955843d5551"></a>
@@ -295,6 +367,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00015">15</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
 
 </div>
 </div>
@@ -310,6 +384,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00016">16</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+
 </div>
 </div>
 <a id="a5f06903bc52f404cdd2dc3ac446b2519" name="a5f06903bc52f404cdd2dc3ac446b2519"></a>
@@ -323,6 +399,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00009">9</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
 
 </div>
 </div>
@@ -338,6 +416,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00018">18</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+
 </div>
 </div>
 <a id="ae2ab5f9a71b8c46ad099d4c53334cad5" name="ae2ab5f9a71b8c46ad099d4c53334cad5"></a>
@@ -351,6 +431,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00017">17</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
 
 </div>
 </div>
@@ -366,6 +448,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00008">8</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+
 </div>
 </div>
 <a id="a979b59ba2d26aeb9cd1083e43a1bc99c" name="a979b59ba2d26aeb9cd1083e43a1bc99c"></a>
@@ -379,6 +463,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00011">11</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
 
 </div>
 </div>
@@ -394,10 +480,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html#l00023">23</a> of file <a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="_f_p_i_b_g_data_e_x_p_8py.html">FPIBGDataEXP.py</a></li>
+<li>python/shared/<a class="el" href="_f_p_i_b_g_data_e_x_p_8py_source.html">FPIBGDataEXP.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

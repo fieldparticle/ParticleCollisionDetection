@@ -155,6 +155,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_my_class_1_1_my_class.html" title="MyClass is a class to act an an example of our stye and formating guide.">MyClass</a> is a class to act an an example of our stye and formating guide. </p>
+
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00007">7</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa105529815f1e4ebc69d1b36cf960441" name="aa105529815f1e4ebc69d1b36cf960441"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa105529815f1e4ebc69d1b36cf960441">&#9670;&#160;</a></span>__init__()</h2>
@@ -183,6 +185,12 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00011">11</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>    <span class="keyword">def </span>__init__(self,ObjName):</div>
+<div class="line"><span class="lineno">   12</span>        <span class="comment">## ObjName contains the name of this object.</span></div>
+<div class="line"><span class="lineno">   13</span>        self.ObjName = ObjName</div>
+<div class="line"><span class="lineno">   14</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -209,6 +217,12 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00033">33</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>    <span class="keyword">def </span>Close(self):</div>
+<div class="line"><span class="lineno">   34</span>        self.bobj.Close()</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">pass</span></div>
+<div class="line"><span class="lineno">   36</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab8b88f2e96e5ea19bfd1ccd308bcfb85" name="ab8b88f2e96e5ea19bfd1ccd308bcfb85"></a>
@@ -238,6 +252,16 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00017">17</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>    <span class="keyword">def </span>Create(self,BaseObj):</div>
+<div class="line"><span class="lineno">   18</span>        <span class="comment">## bobj contains the global object.</span></div>
+<div class="line"><span class="lineno">   19</span>        self.bobj = BaseObj</div>
+<div class="line"><span class="lineno">   20</span>        self.cfg = self.bobj.cfg.config</div>
+<div class="line"><span class="lineno">   21</span>        self.log = self.bobj.log</div>
+<div class="line"><span class="lineno">   22</span>        <span class="comment"># Assign this objects debug level</span></div>
+<div class="line"><span class="lineno">   23</span>        self.dlvl = 50</div>
+<div class="line"><span class="lineno">   24</span>        </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab8fc5ca01a46c5a276392f9a458ce4d2" name="ab8fc5ca01a46c5a276392f9a458ce4d2"></a>
@@ -263,6 +287,11 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00028">28</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>    <span class="keyword">def </span>Open(self):</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">pass</span></div>
+<div class="line"><span class="lineno">   30</span> </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aade95f40b745d1a44c0efd4f62ea4ffb" name="aade95f40b745d1a44c0efd4f62ea4ffb"></a>
@@ -288,6 +317,11 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00039">39</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>    <span class="keyword">def </span>Read(self):</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">pass</span></div>
+<div class="line"><span class="lineno">   41</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a79c00e9ebf3ef036811e1d886b1f23ce" name="a79c00e9ebf3ef036811e1d886b1f23ce"></a>
@@ -317,6 +351,31 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00054">54</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>    <span class="keyword">def </span>testObject(self,modName):</div>
+<div class="line"><span class="lineno">   55</span>        if(modName == <span class="stringliteral">&quot;Test Get All Config Items&quot;</span>):</div>
+<div class="line"><span class="lineno">   56</span>            print(f<span class="stringliteral">&quot;Running Mod&quot;</span> + modName)</div>
+<div class="line"><span class="lineno">   57</span>            self.bobj.log.log( 1,  inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   58</span>                            __file__,</div>
+<div class="line"><span class="lineno">   59</span>                            inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   60</span>                            self.ObjName,</div>
+<div class="line"><span class="lineno">   61</span>                            0,</div>
+<div class="line"><span class="lineno">   62</span>                            f<span class="stringliteral">&quot;Running Mod:&quot;</span> + modName)</div>
+<div class="line"><span class="lineno">   63</span>            self.bobj.cfg.testObject(modName)</div>
+<div class="line"><span class="lineno">   64</span>            print(self.cfg.application.window.title)</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        if(modName == <span class="stringliteral">&quot;Log an Error&quot;</span>):</div>
+<div class="line"><span class="lineno">   67</span>            print(f<span class="stringliteral">&quot;Running Mod&quot;</span> + modName)</div>
+<div class="line"><span class="lineno">   68</span>            self.bobj.log.log( 1,  inspect.currentframe().f_lineno,</div>
+<div class="line"><span class="lineno">   69</span>                        __file__,</div>
+<div class="line"><span class="lineno">   70</span>                        inspect.currentframe().f_code.co_name,</div>
+<div class="line"><span class="lineno">   71</span>                        self.ObjName,</div>
+<div class="line"><span class="lineno">   72</span>                        self.dlvl+1,</div>
+<div class="line"><span class="lineno">   73</span>                        f<span class="stringliteral">&quot;Running Mod:&quot;</span> + modName)</div>
+<div class="line"><span class="lineno">   74</span>                </div>
+<div class="line"><span class="lineno">   75</span>        </div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> 0</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aceaa32281b06b3e0a466279f36602429" name="aceaa32281b06b3e0a466279f36602429"></a>
@@ -342,6 +401,12 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00044">44</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>    <span class="keyword">def </span>Write(self):</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">pass</span></div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    </div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -359,6 +424,8 @@ Public Attributes</h2></td></tr>
 
 <p>bobj contains the global object. </p>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00019">19</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+
 </div>
 </div>
 <a id="a7f64328062cd438438ab6675c5fc3473" name="a7f64328062cd438438ab6675c5fc3473"></a>
@@ -372,6 +439,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00020">20</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
 
 </div>
 </div>
@@ -387,6 +456,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00023">23</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+
 </div>
 </div>
 <a id="ae197f4d2ffef8ccc8f14824a046da367" name="ae197f4d2ffef8ccc8f14824a046da367"></a>
@@ -400,6 +471,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00021">21</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
 
 </div>
 </div>
@@ -417,10 +490,12 @@ Public Attributes</h2></td></tr>
 
 <p>ObjName contains the name of this object. </p>
 
+<p class="definition">Definition at line <a class="el" href="_my_class_8py_source.html#l00013">13</a> of file <a class="el" href="_my_class_8py_source.html">MyClass.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="_my_class_8py.html">MyClass.py</a></li>
+<li>python/shared/<a class="el" href="_my_class_8py_source.html">MyClass.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
