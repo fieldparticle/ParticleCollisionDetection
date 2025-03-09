@@ -140,9 +140,7 @@ Public Member Functions</h2></td></tr>
 
 This class derives from collections.OrderedDict. Thus, the original
 order of the config entries in the input stream is maintained.
-</pre> 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00058">58</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a894414def48aa1889dcd131bde0cbb4d" name="a894414def48aa1889dcd131bde0cbb4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a894414def48aa1889dcd131bde0cbb4d">&#9670;&#160;</a></span>__getattr__()</h2>
 
@@ -162,21 +160,10 @@ order of the config entries in the input stream is maintained.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00065">65</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>    <span class="keyword">def </span>__getattr__(self, attr):</div>
-<div class="line"><span class="lineno">   66</span>        <span class="comment"># Take care that getattr() raises AttributeError, not KeyError.</span></div>
-<div class="line"><span class="lineno">   67</span>        <span class="comment"># Required e.g. for hasattr(), deepcopy and OrderedDict.</span></div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">try</span>:</div>
-<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">return</span> self.__getitem__(attr)</div>
-<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">except</span> KeyError:</div>
-<div class="line"><span class="lineno">   71</span>            <span class="keywordflow">raise</span> AttributeError(<span class="stringliteral">&quot;Attribute %r not found&quot;</span> % attr)</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="libconf_8py_source.html">libconf.py</a></li>
+<li>python/shared/<a class="el" href="libconf_8py.html">libconf.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

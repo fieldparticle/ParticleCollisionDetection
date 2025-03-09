@@ -147,10 +147,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a390bb9766acc94162a27ee4a648ee6a0" id="r_a390bb9766acc94162a27ee4a648ee6a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a390bb9766acc94162a27ee4a648ee6a0">bs</a> = FPIBGBase</td></tr>
 <tr class="separator:a390bb9766acc94162a27ee4a648ee6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_e_l_main_window_8py_source.html#l00234">234</a> of file <a class="el" href="_e_l_main_window_8py_source.html">ELMainWindow.py</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abaa8076f78232916d9a49095db205d15" name="abaa8076f78232916d9a49095db205d15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abaa8076f78232916d9a49095db205d15">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -180,35 +177,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_e_l_main_window_8py_source.html#l00235">235</a> of file <a class="el" href="_e_l_main_window_8py_source.html">ELMainWindow.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  235</span>    <span class="keyword">def </span>__init__(self, ObjName, *args, **kwargs):</div>
-<div class="line"><span class="lineno">  236</span>        super().__init__(*args, **kwargs)</div>
-<div class="line"><span class="lineno">  237</span>        self.ObjName = ObjName</div>
-<div class="line"><span class="lineno">  238</span>        self.setWindowTitle(<span class="stringliteral">&#39;fpibg main window&#39;</span>)</div>
-<div class="line"><span class="lineno">  239</span>        self.setGeometry(100, 100, 1024, 768)</div>
-<div class="line"><span class="lineno">  240</span>        </div>
-<div class="line"><span class="lineno">  241</span>        <span class="comment"># create main layout</span></div>
-<div class="line"><span class="lineno">  242</span>        main_layout = QGridLayout(self)</div>
-<div class="line"><span class="lineno">  243</span>        self.setLayout(main_layout)</div>
-<div class="line"><span class="lineno">  244</span> </div>
-<div class="line"><span class="lineno">  245</span>        <span class="comment"># create tab widget</span></div>
-<div class="line"><span class="lineno">  246</span>        tabs = QTabWidget()</div>
-<div class="line"><span class="lineno">  247</span>        </div>
-<div class="line"><span class="lineno">  248</span>        <span class="comment"># add general setup tab</span></div>
-<div class="line"><span class="lineno">  249</span>        tabSetup = TabObj(self)</div>
-<div class="line"><span class="lineno">  250</span>        tabSetup.Create()</div>
-<div class="line"><span class="lineno">  251</span>        tabs.addTab(tabSetup, <span class="stringliteral">&quot;General&quot;</span>)</div>
-<div class="line"><span class="lineno">  252</span> </div>
-<div class="line"><span class="lineno">  253</span>        <span class="comment"># add tcpip setup tab</span></div>
-<div class="line"><span class="lineno">  254</span>        self.setup_tab = SetupTab()</div>
-<div class="line"><span class="lineno">  255</span>        tabs.addTab(self.setup_tab, <span class="stringliteral">&quot;Setup&quot;</span>)</div>
-<div class="line"><span class="lineno">  256</span> </div>
-<div class="line"><span class="lineno">  257</span>        <span class="comment"># add bottom buttons</span></div>
-<div class="line"><span class="lineno">  258</span>        main_layout.addWidget(tabs, 0, 0, 2, 1)</div>
-<div class="line"><span class="lineno">  259</span>        main_layout.addWidget(QPushButton(<span class="stringliteral">&#39;save&#39;</span>), 2, 0, alignment=Qt.AlignmentFlag.AlignLeft)</div>
-<div class="line"><span class="lineno">  260</span>        main_layout.addWidget(QPushButton(<span class="stringliteral">&#39;cancel&#39;</span>), 2, 0, alignment=Qt.AlignmentFlag.AlignRight)</div>
-<div class="line"><span class="lineno">  261</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -231,19 +199,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">initialize with base class and log success</pre> 
-<p class="definition">Definition at line <a class="el" href="_e_l_main_window_8py_source.html#l00262">262</a> of file <a class="el" href="_e_l_main_window_8py_source.html">ELMainWindow.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  262</span>    <span class="keyword">def </span>Create(self, FPIBGBase):</div>
-<div class="line"><span class="lineno">  263</span>        <span class="stringliteral">&quot;&quot;&quot;initialize with base class and log success&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">  264</span>        self.bs = FPIBGBase</div>
-<div class="line"><span class="lineno">  265</span>        self.bs.log.log(inspect.currentframe().f_lineno,</div>
-<div class="line"><span class="lineno">  266</span>                       __file__,</div>
-<div class="line"><span class="lineno">  267</span>                       inspect.currentframe().f_code.co_name,</div>
-<div class="line"><span class="lineno">  268</span>                       self.ObjName,</div>
-<div class="line"><span class="lineno">  269</span>                       0,</div>
-<div class="line"><span class="lineno">  270</span>                       <span class="stringliteral">&quot;test 1 main window success&quot;</span>)</div>
-<div class="line"><span class="lineno">  271</span>        <span class="keywordflow">return</span> self</div>
-<div class="line"><span class="lineno">  272</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -259,8 +214,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_e_l_main_window_8py_source.html#l00264">264</a> of file <a class="el" href="_e_l_main_window_8py_source.html">ELMainWindow.py</a>.</p>
-
 </div>
 </div>
 <a id="acdf124a1b55003a78a670789d0a3ec18" name="acdf124a1b55003a78a670789d0a3ec18"></a>
@@ -274,8 +227,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_e_l_main_window_8py_source.html#l00237">237</a> of file <a class="el" href="_e_l_main_window_8py_source.html">ELMainWindow.py</a>.</p>
 
 </div>
 </div>
@@ -291,12 +242,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_e_l_main_window_8py_source.html#l00254">254</a> of file <a class="el" href="_e_l_main_window_8py_source.html">ELMainWindow.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/test/<a class="el" href="_e_l_main_window_8py_source.html">ELMainWindow.py</a></li>
+<li>python/test/<a class="el" href="_e_l_main_window_8py.html">ELMainWindow.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

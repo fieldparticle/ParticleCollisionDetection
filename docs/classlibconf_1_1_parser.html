@@ -184,9 +184,7 @@ Protected Member Functions</h2></td></tr>
 
 Takes a ``TokenStream`` as input, the ``parse()`` method then returns
 the config file data in a ``json``-module-style format.
-</pre> 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00334">334</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a53d6d698528eb775e2517fea1e0cee50" name="a53d6d698528eb775e2517fea1e0cee50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53d6d698528eb775e2517fea1e0cee50">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -206,11 +204,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00341">341</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  341</span>    <span class="keyword">def </span>__init__(self, tokenstream):</div>
-<div class="line"><span class="lineno">  342</span>        self.tokens = tokenstream</div>
-<div class="line"><span class="lineno">  343</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -241,19 +234,6 @@ the config file data in a ``json``-module-style format.
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00451">451</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  451</span>    <span class="keyword">def </span>_comma_separated_list_or_empty(self, nonterminal):</div>
-<div class="line"><span class="lineno">  452</span>        values = []</div>
-<div class="line"><span class="lineno">  453</span>        <span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
-<div class="line"><span class="lineno">  454</span>            v = nonterminal()</div>
-<div class="line"><span class="lineno">  455</span>            <span class="keywordflow">if</span> v <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">  456</span>                <span class="keywordflow">return</span> values</div>
-<div class="line"><span class="lineno">  457</span>            values.append(v)</div>
-<div class="line"><span class="lineno">  458</span> </div>
-<div class="line"><span class="lineno">  459</span>            <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.tokens.accept(<span class="stringliteral">&#39;,&#39;</span>):</div>
-<div class="line"><span class="lineno">  460</span>                <span class="keywordflow">return</span> values</div>
-<div class="line"><span class="lineno">  461</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a5b0ef527168e47ce85c058db8a85c696" name="a5b0ef527168e47ce85c058db8a85c696"></a>
@@ -283,15 +263,6 @@ the config file data in a ``json``-module-style format.
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00436">436</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  436</span>    <span class="keyword">def </span>_create_value_node(self, tokentype):</div>
-<div class="line"><span class="lineno">  437</span>        t = self.tokens.accept(tokentype)</div>
-<div class="line"><span class="lineno">  438</span>        <span class="keywordflow">if</span> t <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">  439</span>            <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">  440</span> </div>
-<div class="line"><span class="lineno">  441</span>        <span class="keywordflow">return</span> t.value</div>
-<div class="line"><span class="lineno">  442</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="aa2b03488deb40b2ecce02910bc058620" name="aa2b03488deb40b2ecce02910bc058620"></a>
@@ -331,16 +302,6 @@ the config file data in a ``json``-module-style format.
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00462">462</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  462</span>    <span class="keyword">def </span>_enclosed_block(self, start, nonterminal, end):</div>
-<div class="line"><span class="lineno">  463</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.tokens.accept(start):</div>
-<div class="line"><span class="lineno">  464</span>            <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">  465</span>        result = nonterminal()</div>
-<div class="line"><span class="lineno">  466</span>        self.tokens.expect(end)</div>
-<div class="line"><span class="lineno">  467</span>        <span class="keywordflow">return</span> result</div>
-<div class="line"><span class="lineno">  468</span> </div>
-<div class="line"><span class="lineno">  469</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a8fb335a81169c3be2e32dd61697f986a" name="a8fb335a81169c3be2e32dd61697f986a"></a>
@@ -370,16 +331,6 @@ the config file data in a ``json``-module-style format.
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00443">443</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  443</span>    <span class="keyword">def </span>_parse_any_of(self, nonterminals):</div>
-<div class="line"><span class="lineno">  444</span>        <span class="keywordflow">for</span> fun <span class="keywordflow">in</span> nonterminals:</div>
-<div class="line"><span class="lineno">  445</span>            result = fun()</div>
-<div class="line"><span class="lineno">  446</span>            <span class="keywordflow">if</span> result <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">  447</span>                <span class="keywordflow">return</span> result</div>
-<div class="line"><span class="lineno">  448</span> </div>
-<div class="line"><span class="lineno">  449</span>        <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">  450</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a6eee534a2a93ad5928bc6725ecb4da7d" name="a6eee534a2a93ad5928bc6725ecb4da7d"></a>
@@ -397,11 +348,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00395">395</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  395</span>    <span class="keyword">def </span>array(self):</div>
-<div class="line"><span class="lineno">  396</span>        <span class="keywordflow">return</span> self._enclosed_block(<span class="stringliteral">&#39;[&#39;</span>, self.scalar_value_list_or_empty, <span class="stringliteral">&#39;]&#39;</span>)</div>
-<div class="line"><span class="lineno">  397</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a224163167253e3a93f96cb658fcf5da8" name="a224163167253e3a93f96cb658fcf5da8"></a>
@@ -419,11 +365,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00404">404</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  404</span>    <span class="keyword">def </span>boolean(self):</div>
-<div class="line"><span class="lineno">  405</span>        <span class="keywordflow">return</span> self._create_value_node(<span class="stringliteral">&#39;boolean&#39;</span>)</div>
-<div class="line"><span class="lineno">  406</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="aafd30a5de4f6623e769f12b645a55a05" name="aafd30a5de4f6623e769f12b645a55a05"></a>
@@ -441,16 +382,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00347">347</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  347</span>    <span class="keyword">def </span>configuration(self):</div>
-<div class="line"><span class="lineno">  348</span>        result = self.setting_list_or_empty()</div>
-<div class="line"><span class="lineno">  349</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.tokens.finished():</div>
-<div class="line"><span class="lineno">  350</span>            <span class="keywordflow">raise</span> ConfigParseError(<span class="stringliteral">&quot;Expected end of input but found %s&quot;</span> %</div>
-<div class="line"><span class="lineno">  351</span>                                   (self.tokens.peek(),))</div>
-<div class="line"><span class="lineno">  352</span> </div>
-<div class="line"><span class="lineno">  353</span>        <span class="keywordflow">return</span> result</div>
-<div class="line"><span class="lineno">  354</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a61d62cf0bfaa8ac1adc192d714038dfa" name="a61d62cf0bfaa8ac1adc192d714038dfa"></a>
@@ -468,11 +399,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00419">419</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  419</span>    <span class="keyword">def </span>float(self):</div>
-<div class="line"><span class="lineno">  420</span>        <span class="keywordflow">return</span> self._create_value_node(<span class="stringliteral">&#39;float&#39;</span>)</div>
-<div class="line"><span class="lineno">  421</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a0bf394f4f62e9ef3cfd2b6074bb35d85" name="a0bf394f4f62e9ef3cfd2b6074bb35d85"></a>
@@ -490,11 +416,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00401">401</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  401</span>    <span class="keyword">def </span>group(self):</div>
-<div class="line"><span class="lineno">  402</span>        <span class="keywordflow">return</span> self._enclosed_block(<span class="stringliteral">&#39;{&#39;</span>, self.setting_list_or_empty, <span class="stringliteral">&#39;}&#39;</span>)</div>
-<div class="line"><span class="lineno">  403</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ae38dcc56f1f122a9d34f07bf8f6f7b" name="a3ae38dcc56f1f122a9d34f07bf8f6f7b"></a>
@@ -512,11 +433,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00413">413</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  413</span>    <span class="keyword">def </span>hex(self):</div>
-<div class="line"><span class="lineno">  414</span>        <span class="keywordflow">return</span> self._create_value_node(<span class="stringliteral">&#39;hex&#39;</span>)</div>
-<div class="line"><span class="lineno">  415</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="ab5999a8312d8e9aff977829f1c006846" name="ab5999a8312d8e9aff977829f1c006846"></a>
@@ -534,11 +450,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00416">416</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  416</span>    <span class="keyword">def </span>hex64(self):</div>
-<div class="line"><span class="lineno">  417</span>        <span class="keywordflow">return</span> self._create_value_node(<span class="stringliteral">&#39;hex64&#39;</span>)</div>
-<div class="line"><span class="lineno">  418</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="ab6107849361b2eeaf312ed0850ffdeda" name="ab6107849361b2eeaf312ed0850ffdeda"></a>
@@ -556,11 +467,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00407">407</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  407</span>    <span class="keyword">def </span>integer(self):</div>
-<div class="line"><span class="lineno">  408</span>        <span class="keywordflow">return</span> self._create_value_node(<span class="stringliteral">&#39;integer&#39;</span>)</div>
-<div class="line"><span class="lineno">  409</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="ae655f74c0bd22ffa7b221200bc92f37a" name="ae655f74c0bd22ffa7b221200bc92f37a"></a>
@@ -578,11 +484,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00410">410</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  410</span>    <span class="keyword">def </span>integer64(self):</div>
-<div class="line"><span class="lineno">  411</span>        <span class="keywordflow">return</span> self._create_value_node(<span class="stringliteral">&#39;integer64&#39;</span>)</div>
-<div class="line"><span class="lineno">  412</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a8eb84c858dd0879ff15bb13befa9f132" name="a8eb84c858dd0879ff15bb13befa9f132"></a>
@@ -600,11 +501,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00398">398</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  398</span>    <span class="keyword">def </span>list(self):</div>
-<div class="line"><span class="lineno">  399</span>        <span class="keywordflow">return</span> self._enclosed_block(<span class="stringliteral">&#39;(&#39;</span>, self.value_list_or_empty, <span class="stringliteral">&#39;)&#39;</span>)</div>
-<div class="line"><span class="lineno">  400</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a9b4b01651131d1d25984999f25b8f930" name="a9b4b01651131d1d25984999f25b8f930"></a>
@@ -622,11 +518,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00344">344</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  344</span>    <span class="keyword">def </span>parse(self):</div>
-<div class="line"><span class="lineno">  345</span>        <span class="keywordflow">return</span> self.configuration()</div>
-<div class="line"><span class="lineno">  346</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a77adca518104d3a318fe56e39e1d6be8" name="a77adca518104d3a318fe56e39e1d6be8"></a>
@@ -644,14 +535,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00383">383</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  383</span>    <span class="keyword">def </span>scalar_value(self):</div>
-<div class="line"><span class="lineno">  384</span>        <span class="comment"># This list is ordered so that more common tokens are checked first.</span></div>
-<div class="line"><span class="lineno">  385</span>        acceptable = [self.string, self.boolean, self.integer, self.float,</div>
-<div class="line"><span class="lineno">  386</span>                      self.hex, self.integer64, self.hex64]</div>
-<div class="line"><span class="lineno">  387</span>        <span class="keywordflow">return</span> self._parse_any_of(acceptable)</div>
-<div class="line"><span class="lineno">  388</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a098b55a224697f1c52595137e9bbbdd5" name="a098b55a224697f1c52595137e9bbbdd5"></a>
@@ -669,11 +552,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00392">392</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  392</span>    <span class="keyword">def </span>scalar_value_list_or_empty(self):</div>
-<div class="line"><span class="lineno">  393</span>        <span class="keywordflow">return</span> self._comma_separated_list_or_empty(self.scalar_value)</div>
-<div class="line"><span class="lineno">  394</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a4f1a9446d7a64e82c187c30abb401f80" name="a4f1a9446d7a64e82c187c30abb401f80"></a>
@@ -691,23 +569,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00364">364</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  364</span>    <span class="keyword">def </span>setting(self):</div>
-<div class="line"><span class="lineno">  365</span>        name = self.tokens.accept(<span class="stringliteral">&#39;name&#39;</span>)</div>
-<div class="line"><span class="lineno">  366</span>        <span class="keywordflow">if</span> name <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">  367</span>            <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">  368</span> </div>
-<div class="line"><span class="lineno">  369</span>        self.tokens.expect(<span class="stringliteral">&#39;:&#39;</span>, <span class="stringliteral">&#39;=&#39;</span>)</div>
-<div class="line"><span class="lineno">  370</span> </div>
-<div class="line"><span class="lineno">  371</span>        value = self.value()</div>
-<div class="line"><span class="lineno">  372</span>        <span class="keywordflow">if</span> value <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">  373</span>            self.tokens.error(<span class="stringliteral">&quot;expected a value&quot;</span>)</div>
-<div class="line"><span class="lineno">  374</span> </div>
-<div class="line"><span class="lineno">  375</span>        self.tokens.accept(<span class="stringliteral">&#39;;&#39;</span>, <span class="stringliteral">&#39;,&#39;</span>)</div>
-<div class="line"><span class="lineno">  376</span> </div>
-<div class="line"><span class="lineno">  377</span>        <span class="keywordflow">return</span> (name.text, value)</div>
-<div class="line"><span class="lineno">  378</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="ae76056f4987b90bc49134abb422f9906" name="ae76056f4987b90bc49134abb422f9906"></a>
@@ -725,17 +586,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00355">355</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  355</span>    <span class="keyword">def </span>setting_list_or_empty(self):</div>
-<div class="line"><span class="lineno">  356</span>        result = AttrDict()</div>
-<div class="line"><span class="lineno">  357</span>        <span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
-<div class="line"><span class="lineno">  358</span>            s = self.setting()</div>
-<div class="line"><span class="lineno">  359</span>            <span class="keywordflow">if</span> s <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">  360</span>                <span class="keywordflow">return</span> result</div>
-<div class="line"><span class="lineno">  361</span> </div>
-<div class="line"><span class="lineno">  362</span>            result[s[0]] = s[1]</div>
-<div class="line"><span class="lineno">  363</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a9b9a38b85446dc18e1903e8ba5f2dd6e" name="a9b9a38b85446dc18e1903e8ba5f2dd6e"></a>
@@ -753,22 +603,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00422">422</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  422</span>    <span class="keyword">def </span>string(self):</div>
-<div class="line"><span class="lineno">  423</span>        t_first = self.tokens.accept(<span class="stringliteral">&#39;string&#39;</span>)</div>
-<div class="line"><span class="lineno">  424</span>        <span class="keywordflow">if</span> t_first <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">  425</span>            <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">  426</span> </div>
-<div class="line"><span class="lineno">  427</span>        values = [t_first.value]</div>
-<div class="line"><span class="lineno">  428</span>        <span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
-<div class="line"><span class="lineno">  429</span>            t = self.tokens.accept(<span class="stringliteral">&#39;string&#39;</span>)</div>
-<div class="line"><span class="lineno">  430</span>            <span class="keywordflow">if</span> t <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">  431</span>                <span class="keywordflow">break</span></div>
-<div class="line"><span class="lineno">  432</span>            values.append(t.value)</div>
-<div class="line"><span class="lineno">  433</span> </div>
-<div class="line"><span class="lineno">  434</span>        <span class="keywordflow">return</span> <span class="stringliteral">&#39;&#39;</span>.join(values)</div>
-<div class="line"><span class="lineno">  435</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a05e8435ea73c884adb2a1bb6068ed34a" name="a05e8435ea73c884adb2a1bb6068ed34a"></a>
@@ -786,12 +620,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00379">379</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  379</span>    <span class="keyword">def </span>value(self):</div>
-<div class="line"><span class="lineno">  380</span>        acceptable = [self.scalar_value, self.array, self.list, self.group]</div>
-<div class="line"><span class="lineno">  381</span>        <span class="keywordflow">return</span> self._parse_any_of(acceptable)</div>
-<div class="line"><span class="lineno">  382</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="aaeb28161bbc4584917bd60a2dd94f056" name="aaeb28161bbc4584917bd60a2dd94f056"></a>
@@ -809,11 +637,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00389">389</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  389</span>    <span class="keyword">def </span>value_list_or_empty(self):</div>
-<div class="line"><span class="lineno">  390</span>        <span class="keywordflow">return</span> tuple(self._comma_separated_list_or_empty(self.value))</div>
-<div class="line"><span class="lineno">  391</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -829,8 +652,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00393">393</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-
 </div>
 </div>
 <a id="a29d8dc0dca6c07471363c64d22f85424" name="a29d8dc0dca6c07471363c64d22f85424"></a>
@@ -844,8 +665,6 @@ the config file data in a ``json``-module-style format.
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00396">396</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
 
 </div>
 </div>
@@ -861,8 +680,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00402">402</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-
 </div>
 </div>
 <a id="a6f0670d15d607ef6a5c42973c45853d7" name="a6f0670d15d607ef6a5c42973c45853d7"></a>
@@ -876,8 +693,6 @@ the config file data in a ``json``-module-style format.
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00342">342</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
 
 </div>
 </div>
@@ -893,8 +708,6 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00390">390</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-
 </div>
 </div>
 <a id="af19e5202e1d8c32cda2956571a5e3c4a" name="af19e5202e1d8c32cda2956571a5e3c4a"></a>
@@ -909,12 +722,10 @@ the config file data in a ``json``-module-style format.
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="libconf_8py_source.html#l00399">399</a> of file <a class="el" href="libconf_8py_source.html">libconf.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="libconf_8py_source.html">libconf.py</a></li>
+<li>python/shared/<a class="el" href="libconf_8py.html">libconf.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

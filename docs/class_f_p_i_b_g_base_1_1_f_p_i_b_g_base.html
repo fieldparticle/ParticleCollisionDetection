@@ -140,9 +140,7 @@ Public Attributes</h2></td></tr>
 
 Attributes:
     log (FPIBGLog): FPIBGLog for loogin information and errors
-</pre> 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00006">6</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a124c41054452980075bb82ec16d9ce70" name="a124c41054452980075bb82ec16d9ce70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a124c41054452980075bb82ec16d9ce70">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -166,20 +164,6 @@ Attributes:
 Args:
     Moniker (string): THe Name of the object.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00016">16</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>    <span class="keyword">def </span>__init__ (self,ObjName):</div>
-<div class="line"><span class="lineno">   17</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   18</span><span class="stringliteral">        Initializes the object with the application name.</span></div>
-<div class="line"><span class="lineno">   19</span><span class="stringliteral"></span> </div>
-<div class="line"><span class="lineno">   20</span><span class="stringliteral">        Args:</span></div>
-<div class="line"><span class="lineno">   21</span><span class="stringliteral">            Moniker (string): THe Name of the object.</span></div>
-<div class="line"><span class="lineno">   22</span><span class="stringliteral"></span> </div>
-<div class="line"><span class="lineno">   23</span><span class="stringliteral">        </span></div>
-<div class="line"><span class="lineno">   24</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   25</span>        print(f<span class="stringliteral">&quot;Created &quot;</span> + ObjName)</div>
-<div class="line"><span class="lineno">   26</span>        self.ObjName = ObjName</div>
-<div class="line"><span class="lineno">   27</span>        </div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -198,12 +182,6 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00077">77</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>    <span class="keyword">def </span>Close(self):</div>
-<div class="line"><span class="lineno">   78</span>        self.log.Close()</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>    </div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a87bc36833f4697cbb68d269879bbf418" name="a87bc36833f4697cbb68d269879bbf418"></a>
@@ -234,28 +212,6 @@ Args:
 Args:
     self : this.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00028">28</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>    <span class="keyword">def </span>Create(self,CfgFileName,LogName):</div>
-<div class="line"><span class="lineno">   29</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   30</span><span class="stringliteral">        Creates the base object and memeber objects log and config</span></div>
-<div class="line"><span class="lineno">   31</span><span class="stringliteral"></span> </div>
-<div class="line"><span class="lineno">   32</span><span class="stringliteral">        Args:</span></div>
-<div class="line"><span class="lineno">   33</span><span class="stringliteral">            self : this.</span></div>
-<div class="line"><span class="lineno">   34</span><span class="stringliteral">       </span></div>
-<div class="line"><span class="lineno">   35</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   36</span>        self.log = <a class="code hl_namespace" href="namespace_f_p_i_b_g_log.html">FPIBGLog</a>(<span class="stringliteral">&quot;GlobalLoggingObject&quot;</span>)   </div>
-<div class="line"><span class="lineno">   37</span>        self.log.Create(LogName)</div>
-<div class="line"><span class="lineno">   38</span>        self.log.Open()</div>
-<div class="line"><span class="lineno">   39</span>        self.cfg = <a class="code hl_namespace" href="namespace_f_p_i_b_g_config.html">FPIBGConfig</a>(<span class="stringliteral">&quot;GlobalConfigObject&quot;</span>)</div>
-<div class="line"><span class="lineno">   40</span>        self.cfg.Create(self.log,CfgFileName)</div>
-<div class="line"><span class="lineno">   41</span>        </div>
-<div class="line"><span class="lineno">   42</span>        </div>
-<div class="line"><span class="lineno">   43</span>       </div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span><span class="comment"># @abstrctmethod</span></div>
-<div class="ttc" id="anamespace_f_p_i_b_g_config_html"><div class="ttname"><a href="namespace_f_p_i_b_g_config.html">FPIBGConfig</a></div><div class="ttdef"><b>Definition</b> <a href="_f_p_i_b_g_config_8py_source.html#l00001">FPIBGConfig.py:1</a></div></div>
-<div class="ttc" id="anamespace_f_p_i_b_g_log_html"><div class="ttname"><a href="namespace_f_p_i_b_g_log.html">FPIBGLog</a></div><div class="ttdef"><b>Definition</b> <a href="_f_p_i_b_g_log_8py_source.html#l00001">FPIBGLog.py:1</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="adb4adce6b98651d531fdae4373b5ddfe" name="adb4adce6b98651d531fdae4373b5ddfe"></a>
@@ -273,10 +229,6 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00075">75</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>    <span class="keyword">def </span>Open(self):</div>
-<div class="line"><span class="lineno">   76</span>        self.log.Open()</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="ade46c40ecb869a9c47c9396faac501dd" name="ade46c40ecb869a9c47c9396faac501dd"></a>
@@ -303,37 +255,6 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00046">46</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>    <span class="keyword">def </span>testObject(self,modNumber,dbglvl):</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">if</span> modNumber == 1 <span class="keywordflow">and</span> dbglvl == 5:</div>
-<div class="line"><span class="lineno">   48</span>            print(f<span class="stringliteral">&quot;Running Mod&quot;</span> , modNumber , <span class="stringliteral">&quot; Test&quot;</span>)</div>
-<div class="line"><span class="lineno">   49</span>            self.log.log(   inspect.currentframe().f_lineno,</div>
-<div class="line"><span class="lineno">   50</span>                            __file__,</div>
-<div class="line"><span class="lineno">   51</span>                            inspect.currentframe().f_code.co_name,</div>
-<div class="line"><span class="lineno">   52</span>                            self.ObjName,</div>
-<div class="line"><span class="lineno">   53</span>                            0,</div>
-<div class="line"><span class="lineno">   54</span>                            <span class="stringliteral">&quot;Test 1 Success&quot;</span>)</div>
-<div class="line"><span class="lineno">   55</span>            self.cfg.testObject(modNumber,dbglvl)</div>
-<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">return</span> 0</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">elif</span> modNumber == 2 <span class="keywordflow">and</span> dbglvl == 5:</div>
-<div class="line"><span class="lineno">   58</span>            print(f<span class="stringliteral">&quot;Running Mod&quot;</span> , modNumber , <span class="stringliteral">&quot; Test&quot;</span>)</div>
-<div class="line"><span class="lineno">   59</span>            self.log.log(   inspect.currentframe().f_lineno,</div>
-<div class="line"><span class="lineno">   60</span>                            __file__,</div>
-<div class="line"><span class="lineno">   61</span>                            inspect.currentframe().f_code.co_name,</div>
-<div class="line"><span class="lineno">   62</span>                            self.ObjName,</div>
-<div class="line"><span class="lineno">   63</span>                            0,</div>
-<div class="line"><span class="lineno">   64</span>                            <span class="stringliteral">&quot;Test 2 Success&quot;</span>)</div>
-<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">return</span> 0</div>
-<div class="line"><span class="lineno">   66</span>        </div>
-<div class="line"><span class="lineno">   67</span>    </div>
-<div class="line"><span class="lineno">   68</span>        self.log.log(   inspect.currentframe().f_lineno,</div>
-<div class="line"><span class="lineno">   69</span>                            __file__,</div>
-<div class="line"><span class="lineno">   70</span>                            inspect.currentframe().f_code.co_name,</div>
-<div class="line"><span class="lineno">   71</span>                            self.Moniker,</div>
-<div class="line"><span class="lineno">   72</span>                            1,</div>
-<div class="line"><span class="lineno">   73</span>                            <span class="stringliteral">&quot;Invalid test number&quot;</span>)</div>
-<div class="line"><span class="lineno">   74</span> </div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -349,8 +270,6 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00039">39</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-
 </div>
 </div>
 <a id="a4e69597f083da0030be37b98e44133e6" name="a4e69597f083da0030be37b98e44133e6"></a>
@@ -364,8 +283,6 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00036">36</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
 
 </div>
 </div>
@@ -381,8 +298,6 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00071">71</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-
 </div>
 </div>
 <a id="a0fb22c754a8c4e69da86f3897bc7155e" name="a0fb22c754a8c4e69da86f3897bc7155e"></a>
@@ -397,12 +312,10 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_p_i_b_g_base_8py_source.html#l00026">26</a> of file <a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python/shared/<a class="el" href="_f_p_i_b_g_base_8py_source.html">FPIBGBase.py</a></li>
+<li>python/shared/<a class="el" href="_f_p_i_b_g_base_8py.html">FPIBGBase.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
