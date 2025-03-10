@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "FPIBG Utility", "index.html", [
-    [ "CEN5035 Submission FPIBG Sprint 2, Modules 3,4,5", "index.html", "index" ],
+    [ "CEN5035 Submission FPIBG Sprint 2, Modules 3,4,5", "index.html", null ],
     [ "Utility Project Style and Procedure Guide", "_f_p_i_b_g.html", [
       [ "Class Instantiations", "_f_p_i_b_g.html#section2", null ],
       [ "Logging", "_f_p_i_b_g.html#section3", [
@@ -70,7 +70,7 @@ var NAVTREEINDEX =
 "_b_r_main_window_8py.html",
 "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#a477debda785d2795feb9b726d4d25a1e",
 "class_tab_form_run_rpt_1_1_tab_run_rpt.html",
-"namespace_e_l_main_window.html#a28cd329b49ed3ce6f25499af5576154b"
+"namespace_e_l_main_window.html#a42422b5afb3da928480e6be6b854fd81"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

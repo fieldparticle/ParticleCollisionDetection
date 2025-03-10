@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"namespace_e_l_main_window.html#a28cd329b49ed3ce6f25499af5576154b":[2,0,2,8],
-"namespace_e_l_main_window.html#a3cc8fdf57a2078228a6a80a13bdc84c3":[2,0,2,2],
 "namespace_e_l_main_window.html#a42422b5afb3da928480e6be6b854fd81":[2,0,2,6],
 "namespace_e_l_main_window.html#a7329dceb51fd28e7a8710e30b07d13cf":[2,0,2,3],
 "namespace_e_l_main_window.html#aaede88d60506a1ae3f15c6fcf1d9d9f4":[2,0,2,7],

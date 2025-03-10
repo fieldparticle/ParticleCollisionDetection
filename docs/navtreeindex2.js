@@ -235,8 +235,6 @@ var NAVTREEINDEX2 =
 "hierarchy.html":[3,2],
 "index.html":[],
 "index.html":[0],
-"index.html#sec1":[0,0],
-"index.html#sec2":[0,1],
 "libconf_8py.html":[4,0,1,0,8],
 "namespace_b_r_main_window.html":[2,0,0],
 "namespace_b_r_main_window.html#a03485471079b715ce45f4143e9ff0ffd":[2,0,0,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX2 =
 "namespace_config_test.html#a32934afbf6cc634b45c35620210f6e8c":[2,0,1,1],
 "namespace_config_test.html#a6f4caa7a83369a8199b29009ffe70660":[2,0,1,3],
 "namespace_config_test.html#aeed5f257216a678bff7ffac6eefab0d1":[2,0,1,2],
-"namespace_e_l_main_window.html":[2,0,2]
+"namespace_e_l_main_window.html":[2,0,2],
+"namespace_e_l_main_window.html#a28cd329b49ed3ce6f25499af5576154b":[2,0,2,8],
+"namespace_e_l_main_window.html#a3cc8fdf57a2078228a6a80a13bdc84c3":[2,0,2,2]
 };
