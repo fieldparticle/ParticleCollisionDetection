@@ -25,22 +25,7 @@
 var NAVTREE =
 [
   [ "FPIBG Utility", "index.html", [
-    [ "CEN5035 Submission FPIBG Sprint 2, Modules 3,4,5", "index.html", null ],
-    [ "Utility Project Style and Procedure Guide", "_f_p_i_b_g.html", [
-      [ "Class Instantiations", "_f_p_i_b_g.html#section2", null ],
-      [ "Logging", "_f_p_i_b_g.html#section3", [
-        [ "Logging succesfull function calls.", "_f_p_i_b_g.html#subsec1", null ],
-        [ "Logging failures of function calls.", "_f_p_i_b_g.html#subsec2", null ],
-        [ "Debug level for classes.", "_f_p_i_b_g.html#subsec3", null ]
-      ] ],
-      [ "Exercising and Unit testing", "_f_p_i_b_g.html#section4", [
-        [ "Exercising", "_f_p_i_b_g.html#subsec5", null ],
-        [ "Unit Testing with Pytest", "_f_p_i_b_g.html#subsec6", null ]
-      ] ],
-      [ "Documenting the code", "_f_p_i_b_g.html#section5", [
-        [ "Documenting a class", "_f_p_i_b_g.html#subsec7", null ]
-      ] ]
-    ] ],
+    [ "CEN5035 Submission FPIBG Sprint 2, Modules 3,4,5", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -68,8 +53,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_b_r_main_window_8py.html",
-"class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#a477debda785d2795feb9b726d4d25a1e",
-"class_tab_form_run_rpt_1_1_tab_run_rpt.html",
+"class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#ab0c8b504a3ccdd97fb11b32393f89e65",
+"class_tab_form_set_up_1_1_tab_setup.html",
 "namespace_e_l_main_window.html#a42422b5afb3da928480e6be6b854fd81"
 ];
 
