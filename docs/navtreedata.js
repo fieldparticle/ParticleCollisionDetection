@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "FPIBG Utility", "index.html", [
-    [ "CEN5035 Submission FPIBG Sprint 2, Modules 3,4,5", "index.html", "index" ],
+    [ "CEN5035 Submission FPIBG Sprint 4, Modules 9,10", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -40,8 +40,8 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -53,9 +53,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_b_r_main_window_8py.html",
-"class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#ab0c8b504a3ccdd97fb11b32393f89e65",
-"class_tab_form_set_up_1_1_tab_setup.html",
-"namespace_e_l_main_window.html#a42422b5afb3da928480e6be6b854fd81"
+"class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html#aa0d2155490a24e7f10eaa1c45b93194c",
+"class_latex_class_1_1_latex_class.html#ac0e84201d15c5f2bddab4ff0886ea4be",
+"class_tab_form_reports_1_1_tab_reports.html#a222ce800c2a000ce070ed80fd1d44db5",
+"classlibconf_1_1_attr_dict.html",
+"namespace_b_r_main_window.html#a03485471079b715ce45f4143e9ff0ffd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
