@@ -28,6 +28,7 @@ var namespaces_dup =
       [ "syspth", "namespace_e_l_test_f_p_i_b_gserver.html#a279ddd57e0662735f4ebd5aabe0bcbfb", null ]
     ] ],
     [ "FPIBGBase", "namespace_f_p_i_b_g_base.html", "namespace_f_p_i_b_g_base" ],
+    [ "FPIBGBuildMovie", "namespace_f_p_i_b_g_build_movie.html", null ],
     [ "FPIBGclient", "namespace_f_p_i_b_gclient.html", "namespace_f_p_i_b_gclient" ],
     [ "FPIBGConfig", "namespace_f_p_i_b_g_config.html", "namespace_f_p_i_b_g_config" ],
     [ "FPIBGData", "namespace_f_p_i_b_g_data.html", "namespace_f_p_i_b_g_data" ],
@@ -45,6 +46,9 @@ var namespaces_dup =
     [ "KMMainWindow", "namespace_k_m_main_window.html", [
       [ "app", "namespace_k_m_main_window.html#a58eff969d65d527ecc120f2e4481e16b", null ],
       [ "bc", "namespace_k_m_main_window.html#a9ab7b66e62e4bc0562f7ec744b8a3ff2", null ],
+      [ "cwd", "namespace_k_m_main_window.html#a5e3f7ca9c27b80de4336cff0b987c1e6", null ],
+      [ "shrddir", "namespace_k_m_main_window.html#a893d3cd9f2602bddee9790fb95fa4e6e", null ],
+      [ "syspth", "namespace_k_m_main_window.html#ab7375a64b08dc87537e830ad0cf69cbb", null ],
       [ "window", "namespace_k_m_main_window.html#acf195d8e4a395153444aa8280518599d", null ]
     ] ],
     [ "LatexClass", "namespace_latex_class.html", "namespace_latex_class" ],
@@ -56,6 +60,7 @@ var namespaces_dup =
       [ "shrddir", "namespacepreamble.html#a628f41948ba7eb323c93471f19859ad7", null ],
       [ "syspth", "namespacepreamble.html#add7650f8336383c9b5a7d77d07d10fde", null ]
     ] ],
+    [ "pyqtLED", "namespacepyqt_l_e_d.html", "namespacepyqt_l_e_d" ],
     [ "runppt2md", "namespacerunppt2md.html", [
       [ "bc", "namespacerunppt2md.html#a34404e5a51a0d14830de7e6419d20034", null ],
       [ "cwd", "namespacerunppt2md.html#a42b3217cee7974175a2873da2f2b559f", null ],
@@ -64,12 +69,15 @@ var namespaces_dup =
     ] ],
     [ "TabClass", "namespace_tab_class.html", "namespace_tab_class" ],
     [ "TabFormGenConfig", "namespace_tab_form_gen_config.html", "namespace_tab_form_gen_config" ],
+    [ "TabFormGenData", "namespace_tab_form_gen_data.html", "namespace_tab_form_gen_data" ],
+    [ "TabFormGenSimPlots", "namespace_tab_form_gen_sim_plots.html", "namespace_tab_form_gen_sim_plots" ],
     [ "TabFormGenVPerf", "namespace_tab_form_gen_v_perf.html", "namespace_tab_form_gen_v_perf" ],
     [ "TabFormReports", "namespace_tab_form_reports.html", "namespace_tab_form_reports" ],
     [ "TabFormRunRpt", "namespace_tab_form_run_rpt.html", "namespace_tab_form_run_rpt" ],
     [ "TabFormRunSim", "namespace_tab_form_run_sim.html", "namespace_tab_form_run_sim" ],
     [ "TabFormSetUp", "namespace_tab_form_set_up.html", "namespace_tab_form_set_up" ],
     [ "TabFormWelcome", "namespace_tab_form_welcome.html", "namespace_tab_form_welcome" ],
+    [ "TableModel", "namespace_table_model.html", "namespace_table_model" ],
     [ "test_FPIBGData", "namespacetest___f_p_i_b_g_data.html", [
       [ "dataClass", "namespacetest___f_p_i_b_g_data.html#a26ff88985d0cd0f72877c55ab7f7558d", null ],
       [ "test_can_find_data_directoryTrue", "namespacetest___f_p_i_b_g_data.html#aba9e2e6b717b989bdd618b47f6772389", null ],
@@ -158,6 +166,7 @@ var namespaces_dup =
       [ "app", "namespace_test_main_window.html#abbb3806a470a2c537d59287f15e45e20", null ],
       [ "bc", "namespace_test_main_window.html#a629680ee340a6b0f5cfc809806c059c8", null ],
       [ "cwd", "namespace_test_main_window.html#aeac4b8906b824da159c58551e3383fd5", null ],
+      [ "guser", "namespace_test_main_window.html#af7b466b2fc19da2060f6711d12770d98", null ],
       [ "shrddir", "namespace_test_main_window.html#a1c9ce6b59806ef6f91219670dec0e8a0", null ],
       [ "syspth", "namespace_test_main_window.html#a29c0f1dddea4ededfe102fe086796896", null ],
       [ "window", "namespace_test_main_window.html#a514007790bbdb94471b4232a72e6e9ef", null ]

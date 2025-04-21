@@ -1,7 +1,23 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,75,57"/>
-<area shape="rect" id="Node000001" href="$class_tab_form_set_up_1_1_worker.html" title=" " alt="" coords="153,5,308,32"/>
-<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="90,35,152,26,153,32,91,40"/>
-<area shape="rect" id="Node000002" href="$class_tab_form_set_up_1_1_worker_run_series.html" title=" " alt="" coords="123,56,338,83"/>
-<area shape="poly" id="edge11_Node000000_Node000002" title=" " alt="" coords="91,48,126,53,125,58,90,53"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,249,99,276"/>
+<area shape="rect" id="Node000001" href="$class_tab_class_1_1_tab_obj.html" title="Add all tabs." alt="" coords="204,5,325,32"/>
+<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="55,233,64,190,80,138,107,86,124,63,145,42,172,26,203,18,204,23,174,31,148,46,128,66,111,89,85,140,69,192,60,234"/>
+<area shape="rect" id="Node000002" href="$class_tab_form_gen_config_1_1_tab_gen_config.html" title=" " alt="" coords="154,56,375,83"/>
+<area shape="poly" id="edge12_Node000000_Node000002" title=" " alt="" coords="59,234,70,201,88,162,113,124,145,93,165,81,168,86,148,97,117,128,93,165,75,203,64,235"/>
+<area shape="rect" id="Node000003" href="$class_tab_form_gen_data_1_1_tab_gen_data.html" title=" " alt="" coords="164,107,365,133"/>
+<area shape="poly" id="edge13_Node000000_Node000003" title=" " alt="" coords="65,234,97,187,120,163,145,143,169,131,172,136,148,148,123,167,102,190,70,237"/>
+<area shape="rect" id="Node000004" href="$class_tab_form_gen_sim_plots_1_1_tab_sim_plots.html" title=" " alt="" coords="166,157,363,200"/>
+<area shape="poly" id="edge14_Node000000_Node000004" title=" " alt="" coords="87,239,146,210,177,198,179,203,148,214,90,244"/>
+<area shape="rect" id="Node000005" href="$class_tab_form_gen_v_perf_1_1_tab_gen_v_perf.html" title=" " alt="" coords="159,224,370,251"/>
+<area shape="poly" id="edge15_Node000000_Node000005" title=" " alt="" coords="114,253,158,247,159,253,114,258"/>
+<area shape="rect" id="Node000006" href="$class_tab_form_reports_1_1_tab_reports.html" title=" " alt="" coords="170,275,359,301"/>
+<area shape="poly" id="edge16_Node000000_Node000006" title=" " alt="" coords="114,267,170,274,169,279,113,273"/>
+<area shape="rect" id="Node000007" href="$class_tab_form_run_rpt_1_1_tab_run_rpt.html" title=" " alt="" coords="171,325,358,352"/>
+<area shape="poly" id="edge17_Node000000_Node000007" title=" " alt="" coords="89,282,148,311,185,322,184,327,146,316,86,287"/>
+<area shape="rect" id="Node000008" href="$class_tab_form_run_sim_1_1_tab_run_sim.html" title=" " alt="" coords="169,376,360,403"/>
+<area shape="poly" id="edge18_Node000000_Node000008" title=" " alt="" coords="73,287,105,327,125,346,148,362,174,373,172,378,145,366,122,350,101,330,68,291"/>
+<area shape="rect" id="Node000009" href="$class_tab_form_set_up_1_1_tab_setup.html" title=" " alt="" coords="180,427,348,453"/>
+<area shape="poly" id="edge19_Node000000_Node000009" title=" " alt="" coords="65,290,96,353,119,385,148,412,181,428,179,433,145,417,115,389,91,355,60,292"/>
+<area shape="rect" id="Node000010" href="$class_tab_form_welcome_1_1_tab_form_welcome.html" title=" " alt="" coords="147,477,382,504"/>
+<area shape="poly" id="edge20_Node000000_Node000010" title=" " alt="" coords="61,291,71,330,87,377,113,424,129,445,148,463,167,474,164,479,145,467,125,449,109,427,83,379,66,332,56,292"/>
 </map>

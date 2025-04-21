@@ -51,6 +51,7 @@ var class_tab_form_gen_config_1_1_tab_gen_config =
     [ "ins_ext_list", "class_tab_form_gen_config_1_1_tab_gen_config.html#aa1638350fb093b47dcc5f6eddc290aeb", null ],
     [ "ins_ext_list_widget", "class_tab_form_gen_config_1_1_tab_gen_config.html#aa44d1166c8ddcb30bb98390134091381", null ],
     [ "log", "class_tab_form_gen_config_1_1_tab_gen_config.html#a6d1344af094bf0bb36e03c306d95c05e", null ],
+    [ "main_layout", "class_tab_form_gen_config_1_1_tab_gen_config.html#aabd2fb61c5d2064ed80bf64187ebdc79", null ],
     [ "no_compute_checkbox", "class_tab_form_gen_config_1_1_tab_gen_config.html#afdcd40af86f141e0c45c9f264974ab5a", null ],
     [ "rep_ext_checkbox", "class_tab_form_gen_config_1_1_tab_gen_config.html#aa1f4adbf6b123938274ea96d514f9543", null ],
     [ "rep_lim_checkbox", "class_tab_form_gen_config_1_1_tab_gen_config.html#af371aa74493da145e2aee9a46e750e16", null ],

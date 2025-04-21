@@ -7,7 +7,8 @@ var hierarchy =
     [ "FPIBGConfig.FPIBGConfig", "class_f_p_i_b_g_config_1_1_f_p_i_b_g_config.html", null ],
     [ "FPIBGLog.FPIBGLog", "class_f_p_i_b_g_log_1_1_f_p_i_b_g_log.html", null ],
     [ "LatexClass.LatexClass", "class_latex_class_1_1_latex_class.html", [
-      [ "LatexClass.LatexPlot", "class_latex_class_1_1_latex_plot.html", null ]
+      [ "LatexClass.LatexPlot", "class_latex_class_1_1_latex_plot.html", null ],
+      [ "LatexClass.LatexTable", "class_latex_class_1_1_latex_table.html", null ]
     ] ],
     [ "list", null, [
       [ "libconf.LibconfArray", "classlibconf_1_1_libconf_array.html", null ]
@@ -31,13 +32,15 @@ var hierarchy =
     [ "FPIBGPlotData.PlotData", "class_f_p_i_b_g_plot_data_1_1_plot_data.html", null ],
     [ "FPIBGPlotDataJBTemp.PlotData", "class_f_p_i_b_g_plot_data_j_b_temp_1_1_plot_data.html", null ],
     [ "pptimg2md.pptimg2md", "classpptimg2md_1_1pptimg2md.html", null ],
-    [ "QObject", null, [
-      [ "TabFormSetUp.Worker", "class_tab_form_set_up_1_1_worker.html", null ],
-      [ "TabFormSetUp.WorkerRunSeries", "class_tab_form_set_up_1_1_worker_run_series.html", null ]
+    [ "QtCore.QAbstractTableModel", null, [
+      [ "TableModel.PandasModel", "class_table_model_1_1_pandas_model.html", null ],
+      [ "TableModel.TableModel", "class_table_model_1_1_table_model.html", null ]
     ] ],
     [ "QTabWidget", null, [
       [ "TabClass.TabObj", "class_tab_class_1_1_tab_obj.html", null ],
       [ "TabFormGenConfig.TabGenConfig", "class_tab_form_gen_config_1_1_tab_gen_config.html", null ],
+      [ "TabFormGenData.TabGenData", "class_tab_form_gen_data_1_1_tab_gen_data.html", null ],
+      [ "TabFormGenSimPlots.TabSimPlots", "class_tab_form_gen_sim_plots_1_1_tab_sim_plots.html", null ],
       [ "TabFormGenVPerf.TabGenVPerf", "class_tab_form_gen_v_perf_1_1_tab_gen_v_perf.html", null ],
       [ "TabFormReports.TabReports", "class_tab_form_reports_1_1_tab_reports.html", null ],
       [ "TabFormRunRpt.TabRunRpt", "class_tab_form_run_rpt_1_1_tab_run_rpt.html", null ],
@@ -48,7 +51,8 @@ var hierarchy =
     [ "QWidget", null, [
       [ "ELMainWindow.FPIBGMainWin", "class_e_l_main_window_1_1_f_p_i_b_g_main_win.html", null ],
       [ "ELMainWindow.SetupTab", "class_e_l_main_window_1_1_setup_tab.html", null ],
-      [ "FPIBGMainWin.FPIBGMainWin", "class_f_p_i_b_g_main_win_1_1_f_p_i_b_g_main_win.html", null ]
+      [ "FPIBGMainWin.FPIBGMainWin", "class_f_p_i_b_g_main_win_1_1_f_p_i_b_g_main_win.html", null ],
+      [ "pyqtLED.QtLed", "classpyqt_l_e_d_1_1_qt_led.html", null ]
     ] ],
     [ "RuntimeError", null, [
       [ "libconf.ConfigParseError", "classlibconf_1_1_config_parse_error.html", null ]

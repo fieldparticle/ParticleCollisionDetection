@@ -1,5 +1,7 @@
 <map id="LatexClass.LatexClass" name="LatexClass.LatexClass">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,163,32"/>
-<area shape="rect" id="Node000002" href="$class_latex_class_1_1_latex_plot.html" title=" " alt="" coords="11,80,157,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,48,87,80,81,80,81,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="86,5,244,32"/>
+<area shape="rect" id="Node000002" href="$class_latex_class_1_1_latex_plot.html" title=" " alt="" coords="5,80,152,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,44,95,82,92,78,137,40"/>
+<area shape="rect" id="Node000003" href="$class_latex_class_1_1_latex_table.html" title=" " alt="" coords="176,80,330,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,40,240,78,236,82,191,44"/>
 </map>

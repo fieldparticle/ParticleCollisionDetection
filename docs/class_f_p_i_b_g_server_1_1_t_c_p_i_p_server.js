@@ -1,12 +1,14 @@
 var class_f_p_i_b_g_server_1_1_t_c_p_i_p_server =
 [
     [ "__init__", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a4ab20b0918ea3bd4109a423319bc672d", null ],
+    [ "Accept", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a5790512b1db3e6b38dcb7ca068326106", null ],
     [ "Close", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a804071116ca742ba2e4cabc9af419352", null ],
     [ "CommandLoop", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#ab42892709cf72c2c8920e3757c46b8a2", null ],
     [ "Create", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a241b991fb1e2b9cb51479eb2d7ff34e8", null ],
     [ "Open", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a85ddb473a151ddd79c9aaf0cd1162b08", null ],
     [ "Read", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a0612e0018c03103f68cf6741b0d7a83e", null ],
     [ "ReadBuf", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a10c7b823c2664b0d501912f7dc3d1e27", null ],
+    [ "readnbyte", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a440e2e978d2e427589b1878858ec7607", null ],
     [ "RecieveBMPFile", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#aa3798ff8ee6fcb9f4a822b8a40e04ad0", null ],
     [ "RecieveImgFileGUI", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a13ed978a08889d83053532e0ab56f0c5", null ],
     [ "RunSeriesCMD", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#ad13bf1bf1aedc4dbb1230d1adb36651e", null ],
@@ -20,6 +22,7 @@ var class_f_p_i_b_g_server_1_1_t_c_p_i_p_server =
     [ "command", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a23c51e143608b0b6800dd4c4123ca58a", null ],
     [ "conn", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#ad29dc9523f3120961467103fcd7688c1", null ],
     [ "dlvl", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a786cc348f6db74f675ef9d102631225d", null ],
+    [ "im", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#aaf6799cfb436cd3a37487d09b5443254", null ],
     [ "isConnected", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a135835e822e7a1d0fda0fc7f966bbb15", null ],
     [ "log", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#aa30cd9737ab2a4d54f1651ac52fbe3a3", null ],
     [ "objname", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a473dee952c9b4f855bf18023ae7107cd", null ],
@@ -28,5 +31,6 @@ var class_f_p_i_b_g_server_1_1_t_c_p_i_p_server =
     [ "saveimgdir", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a99e682e7faee0a6872ae8b76e0755fac", null ],
     [ "server_ip", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a757663305440aaa824c88783d8c304de", null ],
     [ "server_port", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#acabcaf26b4f893f4cf671dcce23fa8a2", null ],
-    [ "server_socket", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a195844fa324fc007f0a40fe2f25f92ac", null ]
+    [ "server_socket", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#a195844fa324fc007f0a40fe2f25f92ac", null ],
+    [ "Text", "class_f_p_i_b_g_server_1_1_t_c_p_i_p_server.html#aa5f3f7c7cd32a87ffdc7efeab3dc5ef7", null ]
 ];

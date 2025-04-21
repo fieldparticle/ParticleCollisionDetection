@@ -73,8 +73,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a241b991fb1e2b9cb51479eb2d7ff34e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ddb473a151ddd79c9aaf0cd1162b08" id="r_a85ddb473a151ddd79c9aaf0cd1162b08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85ddb473a151ddd79c9aaf0cd1162b08">Open</a> (self)</td></tr>
 <tr class="separator:a85ddb473a151ddd79c9aaf0cd1162b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5790512b1db3e6b38dcb7ca068326106" id="r_a5790512b1db3e6b38dcb7ca068326106"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5790512b1db3e6b38dcb7ca068326106">Accept</a> (self)</td></tr>
+<tr class="separator:a5790512b1db3e6b38dcb7ca068326106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804071116ca742ba2e4cabc9af419352" id="r_a804071116ca742ba2e4cabc9af419352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a804071116ca742ba2e4cabc9af419352">Close</a> (self)</td></tr>
 <tr class="separator:a804071116ca742ba2e4cabc9af419352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440e2e978d2e427589b1878858ec7607" id="r_a440e2e978d2e427589b1878858ec7607"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a440e2e978d2e427589b1878858ec7607">readnbyte</a> (self, n)</td></tr>
+<tr class="separator:a440e2e978d2e427589b1878858ec7607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0612e0018c03103f68cf6741b0d7a83e" id="r_a0612e0018c03103f68cf6741b0d7a83e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0612e0018c03103f68cf6741b0d7a83e">Read</a> (self)</td></tr>
 <tr class="separator:a0612e0018c03103f68cf6741b0d7a83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c7b823c2664b0d501912f7dc3d1e27" id="r_a10c7b823c2664b0d501912f7dc3d1e27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10c7b823c2664b0d501912f7dc3d1e27">ReadBuf</a> (self, bufsize)</td></tr>
@@ -97,10 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a473dee952c9b4f855bf18023ae7107cd" id="r_a473dee952c9b4f855bf18023ae7107cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a473dee952c9b4f855bf18023ae7107cd">objname</a> = ObjectName</td></tr>
-<tr class="memdesc:a473dee952c9b4f855bf18023ae7107cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <br /></td></tr>
 <tr class="separator:a473dee952c9b4f855bf18023ae7107cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a135835e822e7a1d0fda0fc7f966bbb15" id="r_a135835e822e7a1d0fda0fc7f966bbb15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a135835e822e7a1d0fda0fc7f966bbb15">isConnected</a> = False</td></tr>
-<tr class="memdesc:a135835e822e7a1d0fda0fc7f966bbb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <br /></td></tr>
 <tr class="separator:a135835e822e7a1d0fda0fc7f966bbb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a185f7f28db442967902256df1097de81" id="r_a185f7f28db442967902256df1097de81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a185f7f28db442967902256df1097de81">bobj</a> = BaseObj</td></tr>
 <tr class="memdesc:a185f7f28db442967902256df1097de81"><td class="mdescLeft">&#160;</td><td class="mdescRight">bobj contains the global object.  <br /></td></tr>
@@ -113,11 +115,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a786cc348f6db74f675ef9d102631225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a221f9910971d3d984d478f3da3caafac" id="r_a221f9910971d3d984d478f3da3caafac"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a221f9910971d3d984d478f3da3caafac">response</a> = &quot;&quot;</td></tr>
 <tr class="separator:a221f9910971d3d984d478f3da3caafac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f3f7c7cd32a87ffdc7efeab3dc5ef7" id="r_aa5f3f7c7cd32a87ffdc7efeab3dc5ef7"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5f3f7c7cd32a87ffdc7efeab3dc5ef7">Text</a> = &quot;&quot;</td></tr>
+<tr class="separator:aa5f3f7c7cd32a87ffdc7efeab3dc5ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a757663305440aaa824c88783d8c304de" id="r_a757663305440aaa824c88783d8c304de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a757663305440aaa824c88783d8c304de">server_ip</a> = self.cfg.image_server_ip</td></tr>
 <tr class="memdesc:a757663305440aaa824c88783d8c304de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the server configuration.  <br /></td></tr>
 <tr class="separator:a757663305440aaa824c88783d8c304de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabcaf26b4f893f4cf671dcce23fa8a2" id="r_acabcaf26b4f893f4cf671dcce23fa8a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acabcaf26b4f893f4cf671dcce23fa8a2">server_port</a> = self.cfg.image_server_port</td></tr>
-<tr class="memdesc:acabcaf26b4f893f4cf671dcce23fa8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <br /></td></tr>
 <tr class="separator:acabcaf26b4f893f4cf671dcce23fa8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addc9c911dd4616c6f09289f049b3c753" id="r_addc9c911dd4616c6f09289f049b3c753"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addc9c911dd4616c6f09289f049b3c753">buffer_size</a> = self.cfg.image_buffer_size</td></tr>
 <tr class="separator:addc9c911dd4616c6f09289f049b3c753"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,15 +129,16 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0f85a03fc7bc425ffdf7d82b3c9ead07" id="r_a0f85a03fc7bc425ffdf7d82b3c9ead07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f85a03fc7bc425ffdf7d82b3c9ead07">savecvsdir</a> = self.cfg.save_csv_dir</td></tr>
 <tr class="separator:a0f85a03fc7bc425ffdf7d82b3c9ead07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195844fa324fc007f0a40fe2f25f92ac" id="r_a195844fa324fc007f0a40fe2f25f92ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a195844fa324fc007f0a40fe2f25f92ac">server_socket</a> = socket.socket(socket.AF_INET, socket.SOCK_STREAM)</td></tr>
+<tr class="memdesc:a195844fa324fc007f0a40fe2f25f92ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <br /></td></tr>
 <tr class="separator:a195844fa324fc007f0a40fe2f25f92ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29dc9523f3120961467103fcd7688c1" id="r_ad29dc9523f3120961467103fcd7688c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad29dc9523f3120961467103fcd7688c1">conn</a> = False</td></tr>
-<tr class="memdesc:ad29dc9523f3120961467103fcd7688c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <br /></td></tr>
+<tr class="memitem:ad29dc9523f3120961467103fcd7688c1" id="r_ad29dc9523f3120961467103fcd7688c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad29dc9523f3120961467103fcd7688c1">conn</a></td></tr>
 <tr class="separator:ad29dc9523f3120961467103fcd7688c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079458627a64e6c2912bef350440123c" id="r_a079458627a64e6c2912bef350440123c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079458627a64e6c2912bef350440123c">addr</a> = self.server_socket.accept()</td></tr>
-<tr class="memdesc:a079458627a64e6c2912bef350440123c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the server.  <br /></td></tr>
 <tr class="separator:a079458627a64e6c2912bef350440123c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c51e143608b0b6800dd4c4123ca58a" id="r_a23c51e143608b0b6800dd4c4123ca58a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23c51e143608b0b6800dd4c4123ca58a">command</a> = self.command.encode('utf-8')</td></tr>
 <tr class="separator:a23c51e143608b0b6800dd4c4123ca58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6799cfb436cd3a37487d09b5443254" id="r_aaf6799cfb436cd3a37487d09b5443254"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf6799cfb436cd3a37487d09b5443254">im</a> = Image.open(buffer)</td></tr>
+<tr class="separator:aaf6799cfb436cd3a37487d09b5443254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ab20b0918ea3bd4109a423319bc672d" name="a4ab20b0918ea3bd4109a423319bc672d"></a>
@@ -159,6 +163,23 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5790512b1db3e6b38dcb7ca068326106" name="a5790512b1db3e6b38dcb7ca068326106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5790512b1db3e6b38dcb7ca068326106">&#9670;&#160;</a></span>Accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FPIBGServer.TCPIPServer.Accept </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a804071116ca742ba2e4cabc9af419352" name="a804071116ca742ba2e4cabc9af419352"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a804071116ca742ba2e4cabc9af419352">&#9670;&#160;</a></span>Close()</h2>
 
@@ -271,6 +292,27 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>bufsize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a440e2e978d2e427589b1878858ec7607" name="a440e2e978d2e427589b1878858ec7607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440e2e978d2e427589b1878858ec7607">&#9670;&#160;</a></span>readnbyte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FPIBGServer.TCPIPServer.readnbyte </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -404,9 +446,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Connect to the server. </p>
-<p>""" </p>
-
 </div>
 </div>
 <a id="a185f7f28db442967902256df1097de81" name="a185f7f28db442967902256df1097de81"></a>
@@ -474,13 +513,10 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">FPIBGServer.TCPIPServer.conn = False</td>
+          <td class="memname">FPIBGServer.TCPIPServer.conn</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Connect to the server. </p>
-<p>""" </p>
 
 </div>
 </div>
@@ -498,6 +534,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aaf6799cfb436cd3a37487d09b5443254" name="aaf6799cfb436cd3a37487d09b5443254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6799cfb436cd3a37487d09b5443254">&#9670;&#160;</a></span>im</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FPIBGServer.TCPIPServer.im = Image.open(buffer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a135835e822e7a1d0fda0fc7f966bbb15" name="a135835e822e7a1d0fda0fc7f966bbb15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a135835e822e7a1d0fda0fc7f966bbb15">&#9670;&#160;</a></span>isConnected</h2>
 
@@ -509,9 +559,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Connect to the server. </p>
-<p>""" </p>
 
 </div>
 </div>
@@ -540,9 +587,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Connect to the server. </p>
-<p>""" </p>
 
 </div>
 </div>
@@ -601,8 +645,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize the server configuration. </p>
-<p>Connect to the server.</p>
-<p>""" </p>
 
 </div>
 </div>
@@ -618,9 +660,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Connect to the server. </p>
-<p>""" </p>
-
 </div>
 </div>
 <a id="a195844fa324fc007f0a40fe2f25f92ac" name="a195844fa324fc007f0a40fe2f25f92ac"></a>
@@ -631,6 +670,23 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">FPIBGServer.TCPIPServer.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect to the server. </p>
+<p>""" </p>
+
+</div>
+</div>
+<a id="aa5f3f7c7cd32a87ffdc7efeab3dc5ef7" name="aa5f3f7c7cd32a87ffdc7efeab3dc5ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f3f7c7cd32a87ffdc7efeab3dc5ef7">&#9670;&#160;</a></span>Text</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FPIBGServer.TCPIPServer.Text = &quot;&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

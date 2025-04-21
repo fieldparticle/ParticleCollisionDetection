@@ -39,7 +39,8 @@ var annotated_dup =
     ] ],
     [ "LatexClass", "namespace_latex_class.html", [
       [ "LatexClass", "class_latex_class_1_1_latex_class.html", "class_latex_class_1_1_latex_class" ],
-      [ "LatexPlot", "class_latex_class_1_1_latex_plot.html", "class_latex_class_1_1_latex_plot" ]
+      [ "LatexPlot", "class_latex_class_1_1_latex_plot.html", "class_latex_class_1_1_latex_plot" ],
+      [ "LatexTable", "class_latex_class_1_1_latex_table.html", "class_latex_class_1_1_latex_table" ]
     ] ],
     [ "libconf", "namespacelibconf.html", [
       [ "AttrDict", "classlibconf_1_1_attr_dict.html", "classlibconf_1_1_attr_dict" ],
@@ -63,11 +64,20 @@ var annotated_dup =
     [ "pptimg2md", "namespacepptimg2md.html", [
       [ "pptimg2md", "classpptimg2md_1_1pptimg2md.html", "classpptimg2md_1_1pptimg2md" ]
     ] ],
+    [ "pyqtLED", "namespacepyqt_l_e_d.html", [
+      [ "QtLed", "classpyqt_l_e_d_1_1_qt_led.html", "classpyqt_l_e_d_1_1_qt_led" ]
+    ] ],
     [ "TabClass", "namespace_tab_class.html", [
       [ "TabObj", "class_tab_class_1_1_tab_obj.html", "class_tab_class_1_1_tab_obj" ]
     ] ],
     [ "TabFormGenConfig", "namespace_tab_form_gen_config.html", [
       [ "TabGenConfig", "class_tab_form_gen_config_1_1_tab_gen_config.html", "class_tab_form_gen_config_1_1_tab_gen_config" ]
+    ] ],
+    [ "TabFormGenData", "namespace_tab_form_gen_data.html", [
+      [ "TabGenData", "class_tab_form_gen_data_1_1_tab_gen_data.html", "class_tab_form_gen_data_1_1_tab_gen_data" ]
+    ] ],
+    [ "TabFormGenSimPlots", "namespace_tab_form_gen_sim_plots.html", [
+      [ "TabSimPlots", "class_tab_form_gen_sim_plots_1_1_tab_sim_plots.html", "class_tab_form_gen_sim_plots_1_1_tab_sim_plots" ]
     ] ],
     [ "TabFormGenVPerf", "namespace_tab_form_gen_v_perf.html", [
       [ "TabGenVPerf", "class_tab_form_gen_v_perf_1_1_tab_gen_v_perf.html", "class_tab_form_gen_v_perf_1_1_tab_gen_v_perf" ]
@@ -82,11 +92,13 @@ var annotated_dup =
       [ "TabRunSim", "class_tab_form_run_sim_1_1_tab_run_sim.html", "class_tab_form_run_sim_1_1_tab_run_sim" ]
     ] ],
     [ "TabFormSetUp", "namespace_tab_form_set_up.html", [
-      [ "TabSetup", "class_tab_form_set_up_1_1_tab_setup.html", "class_tab_form_set_up_1_1_tab_setup" ],
-      [ "Worker", "class_tab_form_set_up_1_1_worker.html", "class_tab_form_set_up_1_1_worker" ],
-      [ "WorkerRunSeries", "class_tab_form_set_up_1_1_worker_run_series.html", "class_tab_form_set_up_1_1_worker_run_series" ]
+      [ "TabSetup", "class_tab_form_set_up_1_1_tab_setup.html", "class_tab_form_set_up_1_1_tab_setup" ]
     ] ],
     [ "TabFormWelcome", "namespace_tab_form_welcome.html", [
       [ "TabFormWelcome", "class_tab_form_welcome_1_1_tab_form_welcome.html", "class_tab_form_welcome_1_1_tab_form_welcome" ]
+    ] ],
+    [ "TableModel", "namespace_table_model.html", [
+      [ "PandasModel", "class_table_model_1_1_pandas_model.html", "class_table_model_1_1_pandas_model" ],
+      [ "TableModel", "class_table_model_1_1_table_model.html", "class_table_model_1_1_table_model" ]
     ] ]
 ];
